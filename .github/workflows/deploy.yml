@@ -3,7 +3,7 @@ name: Deploy Astro Site
 on:
   push:
     branches:
-      - main  # oder master, je nachdem
+      - main
 
 permissions:
   contents: read
@@ -18,7 +18,7 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     environment:
-      name: github-pages   # Pflicht für v4
+      name: github-pages
 
     steps:
       - name: Checkout repository
