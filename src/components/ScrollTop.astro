@@ -1,7 +1,9 @@
 <button id="scrollTop" aria-label="Nach oben">↑</button>
 
-<script>
+<script is:inline>
+if (typeof window !== 'undefined') {
   const btn = document.getElementById('scrollTop');
+  if (!btn) return;
 
   window.addEventListener('scroll', () => {
     btn.style.opacity = window.scrollY > 300 ? '1' : '0';
@@ -10,4 +12,23 @@
   btn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+}
 </script>
+
+<style>
+#scrollTop {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  background: #8c1d18;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 4px;
+  z-index: 100;
+}
+</style>

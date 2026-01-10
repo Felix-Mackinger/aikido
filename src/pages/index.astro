@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Hole das Markdown für die Startseite
+const page = await getCollection('pages').then(p => p.find(p => p.slug === 'index'));
+---
+
+<BaseLayout title={page?.data.title || 'Aikido'}>
+  {page ? <div set:html={page.body} /> : <p>Seite nicht gefunden</p>}
+</BaseLayout>

@@ -1,17 +1,12 @@
-#scrollTop {
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  padding: 0.6rem 0.8rem;
-  border: none;
-  background: var(--accent);
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+.card {
+  background: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin: 1rem 0;
 }
 
-#scrollTop.visible {
-  opacity: 1;
+button {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }

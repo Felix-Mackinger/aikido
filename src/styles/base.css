@@ -1,30 +1,28 @@
-:root {
-  --bg: #f7f6f3;
-  --text: #1a1a1a;
-  --accent: #8c1d18; /* dunkles Rot – japanisch, nicht aggressiv */
-  --line: #d6d6d6;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
+  font-family: 'Noto Sans', sans-serif;
+  background-color: #fefbf5;
+  color: #333;
+  line-height: 1.6;
   margin: 0;
-  font-family: "Inter", system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
+  padding: 0;
 }
 
 main {
-  max-width: 860px;
-  margin: auto;
-  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 h1, h2, h3 {
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #8c1d18;
 }
 
+a {
+  color: #8c1d18;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

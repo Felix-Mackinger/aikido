@@ -1,29 +1,23 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-
-const { title } = Astro.props;
+import ScrollTop from '../components/ScrollTop.astro';
+const { title, content } = Astro.props;
 ---
 
-<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
-  <!-- Stylesheets -->
   <link rel="stylesheet" href="/styles/base.css" />
-  <link rel="stylesheet" href="/styles/navigation.css" />
   <link rel="stylesheet" href="/styles/components.css" />
+  <link rel="stylesheet" href="/styles/navigation.css" />
   <link rel="stylesheet" href="/styles/legal.css" />
-
 </head>
 <body>
-  <Navigation />
-  <main class="container">
-    <slot />
-    <ScrollTop />
+  <slot name="navigation" />
+  <main>
+    {content ? <div set:html={content} /> : <slot />}
   </main>
-  <Footer />
+  <ScrollTop />
 </body>
 </html>
