@@ -1,0 +1,14 @@
+<button id="scrollTop" aria-label="Nach oben">↑</button>
+
+<script is:inline>
+  const btn = document.getElementById('scrollTop');
+
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('show', window.scrollY > 400);
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+

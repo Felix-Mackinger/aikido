@@ -1,2 +1,0 @@
-# aikido
-Repo for Test 
