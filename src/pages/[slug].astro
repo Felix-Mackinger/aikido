@@ -1,10 +1,11 @@
 ---
+import Footer from '../components/Footer.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
-  
+
   return pages.map(page => ({
     params: { slug: page.slug },
     props: page,

@@ -3,8 +3,11 @@ title: Aikido – Der Weg der Harmonie
 order: 1
 ---
 
+<div class="fade-in" style="--delay:0.1s">
 
 > **合気道** – Der Weg, mit der Energie des Anderen in Einklang zu kommen.
+</div>
+
 
 ---
 
@@ -16,6 +19,16 @@ Im Mittelpunkt stehen **Achtsamkeit**, **Körperwahrnehmung** und **respektvolle
 Wir üben Aikido als **Weg** – nicht als Technik-Sammlung.
 
 ---
+
+<section class="hero">
+  <h1>Willkommen im Aikido Dojo</h1>
+  <p>Balance & Harmonie in Bewegung</p>
+</section>
+
+<div class="brush-text">
+合気道 – Harmonie in Bewegung
+</div>
+
 
 ## Was uns ausmacht
 
