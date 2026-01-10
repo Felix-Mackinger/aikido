@@ -16,14 +16,16 @@ const { title, content } = Astro.props;
   <link rel="stylesheet" href="/aikido/styles/legal.css" />
 </head>
 <body>
-  <Navigation />
+  <div class="site-wrapper">
+    <Navigation />
 
-  <!-- Hier kommt dein Main-Container rein -->
-  <main class="content">
-    {content ? <div set:html={content} /> : <slot />}
-  </main>
+    <main class="content">
+      {content ? <div set:html={content} /> : <slot />}
+    </main>
 
-  <Footer />
+    <Footer />
+  </div>
+
   <ScrollTop />
 </body>
 </html>

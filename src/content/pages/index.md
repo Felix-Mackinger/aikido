@@ -3,6 +3,7 @@ title: Aikido – Der Weg der Harmonie
 order: 1
 ---
 
+
 > **合気道** – Der Weg, mit der Energie des Anderen in Einklang zu kommen.
 
 ---
