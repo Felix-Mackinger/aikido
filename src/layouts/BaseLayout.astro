@@ -1,4 +1,6 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import ScrollTop from '../components/ScrollTop.astro';
 const { title, content } = Astro.props;
 ---
@@ -8,16 +10,17 @@ const { title, content } = Astro.props;
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
-  <link rel="stylesheet" href="/styles/base.css" />
-  <link rel="stylesheet" href="/styles/components.css" />
-  <link rel="stylesheet" href="/styles/navigation.css" />
-  <link rel="stylesheet" href="/styles/legal.css" />
+  <link rel="stylesheet" href="/aikido/styles/base.css" />
+  <link rel="stylesheet" href="/aikido/styles/components.css" />
+  <link rel="stylesheet" href="/aikido/styles/navigation.css" />
+  <link rel="stylesheet" href="/aikido/styles/legal.css" />
 </head>
 <body>
-  <slot name="navigation" />
+  <Navigation />
   <main>
     {content ? <div set:html={content} /> : <slot />}
   </main>
+  <Footer />
   <ScrollTop />
 </body>
 </html>
