@@ -1,4 +1,17 @@
-/* legal.css */
+
+/* --  legal  -- */
+
+.legal-container iframe {
+  display: block;
+  margin: 1rem auto;
+  border: 0;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+
 .legal-container {
   max-width: 700px;
   margin: 2rem auto;

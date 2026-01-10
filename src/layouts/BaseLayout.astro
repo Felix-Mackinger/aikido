@@ -17,9 +17,12 @@ const { title, content } = Astro.props;
 </head>
 <body>
   <Navigation />
-  <main>
+
+  <!-- Hier kommt dein Main-Container rein -->
+  <main class="content">
     {content ? <div set:html={content} /> : <slot />}
   </main>
+
   <Footer />
   <ScrollTop />
 </body>
