@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.logo img {
+  height: 42px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.95rem;
+}

@@ -1,0 +1,30 @@
+:root {
+  --bg: #f7f6f3;
+  --text: #1a1a1a;
+  --accent: #8c1d18; /* dunkles Rot – japanisch, nicht aggressiv */
+  --line: #d6d6d6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+main {
+  max-width: 860px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+h1, h2, h3 {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
