@@ -2,14 +2,38 @@
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import ScrollTop from '../components/ScrollTop.astro';
-const { title, content } = Astro.props;
+
+interface Props {
+  title: string;
+  description?: string;
+  content?: string;
+}
+
+const { title, description = "Aikido Dojo - Der Weg der Harmonie. Traditionelle japanische Kampfkunst für alle Altersgruppen.", content } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={description} />
+  <meta name="keywords" content="Aikido, Dojo, Kampfkunst, Japan, Meditation, Selbstverteidigung, Braunau, Training" />
+  <meta name="author" content="Aikido Dojo" />
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:locale" content="de_DE" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/aikido/favicon.svg" />
+  
   <title>{title}</title>
+  <link rel="canonical" href={canonicalURL} />
+  
   <link rel="stylesheet" href="/aikido/styles/base.css" />
   <link rel="stylesheet" href="/aikido/styles/components.css" />
   <link rel="stylesheet" href="/aikido/styles/navigation.css" />
@@ -20,6 +44,7 @@ const { title, content } = Astro.props;
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Serif+JP:wght@400;600&family=Yuji+Syuku&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
   <div class="site-wrapper">
     <Navigation />

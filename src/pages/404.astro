@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout 
+  title="Seite nicht gefunden - 404"
+  description="Die gesuchte Seite konnte nicht gefunden werden."
+>
+  <div class="error-container" style="text-align: center; padding: 4rem 2rem;">
+    <h1 style="font-size: 6rem; color: #8c1d18; margin-bottom: 1rem;">404</h1>
+    <h2 style="font-size: 2rem; margin-bottom: 2rem;">Seite nicht gefunden</h2>
+    <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+      Die gesuchte Seite existiert nicht oder wurde verschoben.
+    </p>
+    <a 
+      href={`${import.meta.env.BASE_URL}`} 
+      class="button"
+      style="display: inline-block; background: #8c1d18; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 0.5rem; font-weight: 600;"
+    >
+      Zurück zur Startseite
+    </a>
+  </div>
+</BaseLayout>

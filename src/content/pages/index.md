@@ -3,68 +3,92 @@ title: Aikido – Der Weg der Harmonie
 order: 1
 ---
 
-<div class="fade-in" style="--delay:0.1s">
+<section class="hero">
+  <h1>Willkommen im Aikido Dojo</h1>
+  <p>Balance & Harmonie in Bewegung</p>
+  <a href="kontakt" class="button">Probetraining vereinbaren</a>
+</section>
 
-> **合気道** – Der Weg, mit der Energie des Anderen in Einklang zu kommen.
+<div class="brush-text fade-in" style="--delay:0.2s">
+合気道 – Der Weg der Harmonie
 </div>
 
+> **"Der Weg, mit der Energie des Anderen in Einklang zu kommen"**
 
 ---
 
 ## Aikido in unserem Dojo
 
-Aikido ist eine **japanische Kampfkunst**, die nicht auf Wettbewerb basiert.  
-Im Mittelpunkt stehen **Achtsamkeit**, **Körperwahrnehmung** und **respektvoller Umgang** miteinander.
+Aikido ist eine **japanische Kampfkunst**, die nicht auf Wettbewerb basiert. Im Mittelpunkt stehen **Achtsamkeit**, **Körperwahrnehmung** und **respektvoller Umgang** miteinander.
 
-Wir üben Aikido als **Weg** – nicht als Technik-Sammlung.
+Wir üben Aikido als **Weg** – nicht als bloße Technik-Sammlung.
 
 ---
-
-<section class="hero">
-  <h1>Willkommen im Aikido Dojo</h1>
-  <p>Balance & Harmonie in Bewegung</p>
-</section>
-
-<div class="brush-text">
-合気道 – Harmonie in Bewegung
-</div>
-
 
 ## Was uns ausmacht
 
-- ruhiges, konzentriertes Training  
-- offen für **Anfänger:innen und Fortgeschrittene**  
-- kein Leistungsdruck, kein Wettkampf  
-- traditionelle Wurzeln, moderne Vermittlung  
+<div class="feature-grid">
+
+<div class="feature-card">
+<h3>🧘 Ruhiges Training</h3>
+<p>Konzentrierte Übungen in entspannter Atmosphäre ohne Leistungsdruck</p>
+</div>
+
+<div class="feature-card">
+<h3>🤝 Für alle Levels</h3>
+<p>Offen für Anfänger:innen und Fortgeschrittene gleichermaßen</p>
+</div>
+
+<div class="feature-card">
+<h3>🌸 Tradition & Moderne</h3>
+<p>Authentische Wurzeln mit zeitgemäßer Vermittlungsweise</p>
+</div>
+
+<div class="feature-card">
+<h3>⚖️ Kein Wettkampf</h3>
+<p>Gemeinsames Lernen steht im Vordergrund, nicht der Vergleich</p>
+</div>
+
+</div>
 
 ---
 
-## Training
+## Trainingszeiten
 
-**Ort:** Unser Dojo in ruhiger Atmosphäre  
-**Zeiten:**  
-- Montag · 18:30 – 20:00  
-- Mittwoch · 19:00 – 20:30  
+<div class="training-schedule">
 
-Ein **kostenloses Probetraining** ist jederzeit möglich.
+<ul>
+<li><strong>Montag</strong> <span>18:30 – 20:00 Uhr</span></li>
+<li><strong>Mittwoch</strong> <span>19:00 – 20:30 Uhr</span></li>
+</ul>
+
+</div>
+
+Ein **kostenloses Probetraining** ist jederzeit möglich – komm einfach vorbei!
 
 ---
 
 ## Für wen ist Aikido geeignet?
 
-Aikido ist für Menschen jeden Alters geeignet.  
-Du brauchst **keine Vorkenntnisse**, nur Neugier und Offenheit.
+Aikido ist für **Menschen jeden Alters** geeignet. Du brauchst keine Vorkenntnisse, nur Neugier und Offenheit.
 
-Besonders geeignet für:
+**Besonders geeignet für:**
 - Menschen, die Bewegung ohne Konkurrenz suchen  
-- Ausgleich zum Alltag  
-- Schulung von Haltung, Balance und Präsenz  
+- Ausgleich zum stressigen Alltag  
+- Schulung von Haltung, Balance und Körperpräsenz  
+- Interessierte an asiatischen Kampfkünsten  
 
 ---
 
-## Interesse?
+<div style="text-align: center; margin: 3rem 0; padding: 2rem; background: linear-gradient(135deg, #f8faf9 0%, #eef2f0 100%); border-radius: 12px;">
+
+## Interesse geweckt?
 
 Komm vorbei und schau dir ein Training an –  
-oder nimm **unverbindlich Kontakt** mit uns auf.
+oder nimm unverbindlich Kontakt mit uns auf.
 
-→ [Zum Kontakt](/kontakt)
+<br>
+
+<a href="kontakt" class="button" style="display: inline-block; margin-top: 1rem;">Jetzt Kontakt aufnehmen →</a>
+
+</div>
