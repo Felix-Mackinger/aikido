@@ -1,0 +1,44 @@
+<button id="scrollTop" aria-label="Nach oben">↑</button>
+
+<style>
+#scrollTop {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #2d5a4a 0%, #1a3d32 100%);
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(45,90,74,0.3);
+  z-index: 1000;
+}
+
+#scrollTop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#scrollTop:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(45,90,74,0.4);
+}
+</style>
+
+<script is:inline>
+  const btn = document.getElementById('scrollTop');
+
+  window.addEventListener('scroll', () => {
+    btn.classList.toggle('show', window.scrollY > 400);
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>

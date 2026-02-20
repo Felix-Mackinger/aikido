@@ -1,0 +1,335 @@
+/* TYPOGRAFIE + RYTHMUS */
+.content {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1.7;
+  color: #282828;
+}
+
+/* HEADINGS - Neues Farbschema: Waldgrün */
+.content h1,
+.content h2,
+.content h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  margin: 1.5rem 0 1rem;
+  color: #2d5a4a;
+}
+
+
+.content h1 {
+  font-size: 2.6rem;
+}
+
+.content h2 {
+  font-size: 2rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content ul,
+.content ol {
+  margin-left: 1.8rem;
+  margin-bottom: 1rem;
+  list-style: none; /* bullets off */
+}
+
+/* LINKS - Grün statt Rot */
+.content a {
+  color: #2d5a4a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(45,90,74,0.3);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.content a:hover {
+  border-color: #2d5a4a;
+  color: #1a3d32;
+}
+
+
+/* QUOTES - Grüner Akzent */
+.content blockquote {
+  border-left: 3px solid #2d5a4a;
+  padding-left: 1rem;
+  color: #555;
+  margin: 1rem 0;
+  background: #f8faf9;
+  padding: 1rem 1rem 1rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+}
+
+
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #2d5a4a 0%, #1a3d32 100%);
+  color: white;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  text-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  opacity: 0.9;
+  position: relative;
+  z-index: 1;
+}
+
+.button {
+  display: inline-block;
+  background: #c9a227;
+  color: #1a1a1a;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.button:hover {
+  background: #d4b43a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+
+
+.content {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.8;
+  color: #222;
+}
+
+.content h1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.content h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #2d5a4a, #c9a227);
+  border-radius: 2px;
+}
+
+.content h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: #2d5a4a;
+}
+
+.content p {
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+}
+
+/* Kalligrafie Akzent - Gold/Grün */
+.brush-text {
+  font-family: 'Yuji Syuku', cursive;
+  font-size: 1.6rem;
+  color: #2d5a4a;
+  margin: 3rem 0;
+  text-align: center;
+  position: relative;
+  padding: 1rem 2rem;
+}
+
+.brush-text::before,
+.brush-text::after {
+  content: '◆';
+  color: #c9a227;
+  margin: 0 1rem;
+  font-size: 0.8rem;
+  vertical-align: middle;
+}
+
+/* STYLISCHE FORMULARE */
+.content form {
+  background: #f8faf9;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin: 2rem 0;
+}
+
+.content form label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.content form input[type="text"],
+.content form input[type="email"],
+.content form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-top: 0.4rem;
+  border: 2px solid #e0e6e3;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.content form input[type="text"]:focus,
+.content form input[type="email"]:focus,
+.content form textarea:focus {
+  outline: none;
+  border-color: #2d5a4a;
+  box-shadow: 0 0 0 3px rgba(45,90,74,0.1);
+}
+
+.content form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.content form button[type="submit"] {
+  background: linear-gradient(135deg, #2d5a4a 0%, #1a3d32 100%);
+  color: white;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(45,90,74,0.3);
+}
+
+.content form button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(45,90,74,0.4);
+}
+
+/* Feature Cards für Homepage */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border: 1px solid #e8ecea;
+  border-left: 4px solid #2d5a4a;
+  transition: all 0.25s ease;
+}
+
+.feature-card:hover {
+  box-shadow: 0 6px 20px rgba(45,90,74,0.15);
+  border-color: #c9a227;
+  border-left-color: #2d5a4a;
+}
+
+
+.feature-card h3 {
+  color: #2d5a4a;
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+/* Trainingszeiten Tabelle */
+.training-schedule {
+  background: linear-gradient(135deg, #f8faf9 0%, #eef2f0 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.training-schedule ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.training-schedule li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e0e6e3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.training-schedule li:last-child {
+  border-bottom: none;
+}
+
+.training-schedule strong {
+  color: #2d5a4a;
+  font-weight: 600;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  .content h1 {
+    font-size: 2rem;
+  }
+  
+  .content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .content form {
+    padding: 1.5rem;
+  }
+}
