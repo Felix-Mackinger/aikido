@@ -1,22 +1,18 @@
-# Aikido Website Fixes - Progress Tracker
+# TODO - Aikido Website Updates
 
-## Phase 1: Core Fixes
-- [x] Fix astro.config.mjs - add static output configuration
-- [x] Fix foto-galerie file extension (add .md)
-- [x] Update BaseLayout.astro with SEO meta tags
-- [x] Fix Footer.astro links with proper base URL
-- [x] Update Navigation.astro with all pages
-- [x] Create 404.astro error page
-- [ ] Add sitemap integration (optional)
+## 1. GitHub Actions Workflow für automatische Deployment
+- [x] GitHub Actions Workflow erstellen (.github/workflows/deploy.yml)
 
-## Phase 2: Testing & Verification
-- [x] Run npm install (if needed)
-- [x] Run npm run build
-- [x] Run npm run preview
-- [x] Verify all pages render correctly
+## 2. Brush SVG natürlichlicher machen
+- [x] public/assets/brush.svg mit organischeren Pinselstrichen ersetzt
 
+## 3. Farben in separate CSS-Datei auslagern
+- [x] public/styles/colors.css mit CSS Variables erstellt
 
-## Phase 3: Deployment
-- [ ] Commit changes
-- [ ] Push to GitHub
-- [ ] Verify GitHub Pages deployment
+## 4. News-System mit automatischer Generierung
+- [x] Content Collection für News erstellen (src/content/news/)
+- [x] src/pages/news.astro für automatische Generierung erstellt
+- [x] src/content/config.ts erweitert
+
+## 5. Bestehende News-Einträge migrieren
+- [x] Alte news.md Einträge in einzelne Markdown-Dateien umgewandelt

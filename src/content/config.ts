@@ -7,6 +7,15 @@ const pages = defineCollection({
   }),
 });
 
+const news = defineCollection({
+  schema: z.object({
+    title: z.string(),
+    date: z.string(),
+    order: z.number(),
+  }),
+});
+
 export const collections = {
   pages,
+  news,
 };
