@@ -74,22 +74,23 @@
 /* BRUSH - Unter der Navigation */
 .nav-brush {
   display: block;
-  width: 100%;
-  height: 28px;
+  width: 100vw;
+  height: 20px;
   margin-top: 1.2rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
   opacity: 0.5;
   order: 3;
   animation: brushSlideIn 1.5s ease-out forwards;
-  transform: translateX(100%);
 }
 
 @keyframes brushSlideIn {
   0% {
-    transform: translateX(100%);
+    transform: translateX(-50%) translateX(-100vw);
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(-50%);
     opacity: 0.5;
   }
 }
