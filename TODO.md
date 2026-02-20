@@ -1,18 +1,33 @@
 # TODO - Aikido Website Updates
 
-## 1. GitHub Actions Workflow für automatische Deployment
-- [x] GitHub Actions Workflow erstellen (.github/workflows/deploy.yml)
+## Erledigt ✅
 
-## 2. Brush SVG natürlichlicher machen
-- [x] public/assets/brush.svg mit organischeren Pinselstrichen ersetzt
+1. **Farbpalette verbessern** ✅
+   - Einheitliche, harmonische Farbpalette in colors.css
+   - Waldgrün inspiriert mit warmen Gold-Akzenten
+   - CSS Variables für einfache Anpassung
 
-## 3. Farben in separate CSS-Datei auslagern
-- [x] public/styles/colors.css mit CSS Variables erstellt
+2. **Footer anpassen** ✅
+   - 4 Spalten: Über Dojo, Kontakt, Zeiten, Rechtliches
+   - Symmetrisches Grid-Layout
+   - Responsive für Mobile
 
-## 4. News-System mit automatischer Generierung
-- [x] Content Collection für News erstellen (src/content/news/)
-- [x] src/pages/news.astro für automatische Generierung erstellt
-- [x] src/content/config.ts erweitert
+3. **Kontaktformular verschönern** ✅
+   - Symmetrisches Layout
+   - Moderne Gestaltung mit Schatten
+   - Verbesserte Input-Felder
 
-## 5. Bestehende News-Einträge migrieren
-- [x] Alte news.md Einträge in einzelne Markdown-Dateien umgewandelt
+4. **Sprachauswahl hinzufügen** ✅
+   - Dropdown oben rechts in der Navigation
+   - Deutsch, Englisch, Japanisch
+   - Mit Icons
+
+5. **Homepage "Terminvereinbaren"** ✅
+   - Neue Seite erstellt
+   - Kontaktformular mit relevanten Feldern
+   - Informationen zum Erstkontakt
+   - Button in Navigation hinzugefügt
+
+6. **Smooth Scroll & Animationen** ✅
+   - Sanftes Scrollen aktiviert
+   - Fade-in Animationen für Inhalte

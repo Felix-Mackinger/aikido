@@ -1,79 +1,99 @@
-/* ============================================
-   FARBEN - Zentrales Farbschema für die Website
-   ============================================ */
+/* 
+  Aikido Website - Farbpalette
+  Einheitliche, harmonische Farben für die gesamte Website
+*/
 
+/* ================================
+   PRIMÄRFARBEN - Waldgrün inspiriert
+   ================================ */
 :root {
-  /* ---- PRIMÄRFARBEN - Waldgrün ---- */
-  --color-primary: #2d5a4a;        /* Hauptfarbe - Waldgrün */
-  --color-primary-dark: #1a3d32;   /* Dunkleres Grün für Hover/Schatten */
-  --color-primary-light: #3d7a64;  /* Helleres Grün für Akzente */
-  --color-primary-bright: #4a9a7a; /* Helles Grün für Highlights */
+  /* Hauptfarbe - tiefes Waldgrün */
+  --color-primary: #2d5a4a;
+  --color-primary-light: #3d7a64;
+  --color-primary-dark: #1a3d32;
   
-  /* ---- SEKUNDÄRFARBEN - Gold ---- */
-  --color-accent: #c9a227;         /* Goldakzent */
-  --color-accent-light: #d4b43a;  /* Helleres Gold für Hover */
-  --color-accent-dark: #a88620;   /* Dunkleres Gold */
+  /* Sekundärfarbe - warmer Goldton */
+  --color-accent: #c9a227;
+  --color-accent-light: #d4b43a;
+  --color-accent-dark: #a8871f;
   
-  /* ---- TEXTFARBEN ---- */
-  --color-text: #282828;           /* Haupttext */
-  --color-text-light: #555555;     /* Leichterer Text */
-  --color-text-dark: #222222;      /* Dunkler Text */
-  --color-text-muted: #666666;     /* Gedämpfter Text */
+  /* ================================
+     HINTERGRUNDFARBEN
+     ================================ */
+  --color-bg-primary: #fdfbf7;
+  --color-bg-secondary: #f8faf9;
+  --color-bg-tertiary: #f5f2eb;
   
-  /* ---- HINTERGRÜNDE ---- */
-  --color-bg: #ffffff;             /* Haupt-Hintergrund */
-  --color-bg-cream: #fdfbf7;       /* Cremefarbener Hintergrund */
-  --color-bg-light: #f8faf9;       /* Heller Grün-Stich */
-  --color-bg-lighter: #f5f8f6;     /* Noch heller */
-  --color-bg-gray: #eef2f0;        /* Grau-Grün */
+  /* ================================
+     TEXTFARBEN
+     ================================ */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #3d3d3d;
+  --color-text-muted: #666666;
+  --color-text-light: #ffffff;
   
-  /* ---- BORDERS & TRENNLINIEN ---- */
-  --color-border: #e0e6e3;         /* Standard Border */
-  --color-border-light: #e8ecea;   /* Leichte Border */
-  --color-border-dark: #d0d8d4;    /* Dunklere Border */
+  /* ================================
+     BORDERS & TRENNLINIEN
+     ================================ */
+  --color-border: #e0e6e3;
+  --color-border-light: #e8ecea;
   
-  /* ---- HERO SECTION ---- */
-  --color-hero-start: #2d5a4a;      /* Hero Gradient Start */
-  --color-hero-end: #1a3d32;       /* Hero Gradient Ende */
+  /* ================================
+     SCHATTEN
+     ================================ */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
   
-  /* ---- BUTTONS ---- */
-  --color-button: #c9a227;         /* Button Hintergrund */
-  --color-button-hover: #d4b43a;  /* Button Hover */
-  --color-button-text: #1a1a1a;   /* Button Text */
-  
-  /* ---- LINKS ---- */
-  --color-link: #2d5a4a;          /* Link Farbe */
-  --color-link-hover: #1a3d32;    /* Link Hover */
-  --color-link-border: rgba(45, 90, 74, 0.3); /* Link Unterstrich */
-  
-  /* ---- TIMELINE ---- */
-  --color-timeline-line: rgba(45, 90, 74, 0.4);
+  /* ================================
+     TIMELINE
+     ================================ */
+  --color-timeline-line: rgba(45, 90, 74, 0.3);
   --color-timeline-dot: #2d5a4a;
   --color-timeline-bg: #fdfbf7;
   
-  /* ---- FOOTER ---- */
-  --color-footer-bg: #f8faf9;
-  --color-footer-border: #e0e6e3;
-  --color-footer-brush: rgba(45, 90, 74, 0.6);
+  /* ================================
+     BUTTONS
+     ================================ */
+  --color-button-primary: #c9a227;
+  --color-button-hover: #d4b43a;
+  --color-button-text: #1a1a1a;
   
-  /* ---- NAVIGATION ---- */
+  /* ================================
+     LINKS
+     ================================ */
+  --color-link: #2d5a4a;
+  --color-link-hover: #1a3d32;
+  
+  /* ================================
+     NAVIGATION
+     ================================ */
   --color-nav-bg: #fdfbf7;
-  --color-nav-border: rgba(0, 0, 0, 0.05);
-  --color-nav-link: #222222;
+  --color-nav-text: #222222;
   --color-nav-hover: #2d5a4a;
   
-  /* ---- FORMULARE ---- */
-  --color-form-bg: #f8faf9;
-  --color-form-border: #e0e6e3;
-  --color-form-focus: #2d5a4a;
-  --color-form-focus-ring: rgba(45, 90, 74, 0.1);
-  
-  /* ---- SHADOWS ---- */
-  --color-shadow: rgba(0, 0, 0, 0.05);
-  --color-shadow-dark: rgba(0, 0, 0, 0.1);
-  --color-shadow-light: rgba(45, 90, 74, 0.15);
-  
-  /* ---- BESONDERE FARBEN ---- */
-  --color-quote-bg: #f8faf9;
-  --color-error: #8c1d18;          /* Fehlerfarbe (falls benötigt) */
+  /* ================================
+     FOOTER
+     ================================ */
+  --color-footer-bg: #f5f2eb;
+  --color-footer-border: #e0e6e3;
+}
+
+/* Dark Mode (optional erweiterbar) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #1a1a1a;
+    --color-bg-secondary: #242424;
+    --color-bg-tertiary: #2d2d2d;
+    
+    --color-text-primary: #f0f0f0;
+    --color-text-secondary: #d0d0d0;
+    --color-text-muted: #a0a0a0;
+    
+    --color-border: #404040;
+    --color-border-light: #333333;
+    
+    --color-footer-bg: #242424;
+    --color-footer-border: #333333;
+  }
 }
