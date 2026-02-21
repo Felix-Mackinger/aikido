@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allNews = await getCollection('news');
+const news = allNews.sort((a, b) => b.data.order - a.data.order);
+---
+
+<BaseLayout title="News">
+  <div class="timeline">
+    {news.map((item, index) => (
+      <div class={`timeline-item ${index % 2 === 0 ? 'right' : 'left'}`}>
+        <div class="timeline-content">
+          <span class="timeline-date">{item.data.date}</span>
+          <h3>{item.data.title}</h3>
+          <p>{item.body}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</BaseLayout>

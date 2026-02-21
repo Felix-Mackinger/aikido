@@ -1,3 +1,6 @@
+/* ================================
+   FADE-IN ANIMATION
+   ================================ */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -12,8 +15,16 @@
   }
 }
 
-/*-- Timeline --*/
-/* TIMELINE WRAPPER */
+/* ================================
+   SMOOTH SCROLL
+   ================================ */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ================================
+   TIMELINE
+   ================================ */
 .timeline {
   position: relative;
   margin: 4rem auto;
@@ -21,7 +32,6 @@
   max-width: 900px;
 }
 
-/* VERTIKALE LINIE */
 .timeline::before {
   content: '';
   position: absolute;
@@ -29,12 +39,10 @@
   bottom: 0;
   left: 50%;
   width: 2px;
-  background: rgba(45, 90, 74, 0.4);
+  background: var(--color-timeline-line);
   transform: translateX(-50%);
 }
 
-
-/* TIMELINE ITEM */
 .timeline-item {
   position: relative;
   width: 50%;
@@ -42,7 +50,6 @@
   box-sizing: border-box;
 }
 
-/* LINKS / RECHTS */
 .timeline-item.left {
   left: 0;
   text-align: right;
@@ -53,18 +60,16 @@
   text-align: left;
 }
 
-/* KREIS (PUNKT AUF DER LINIE) */
 .timeline-item::before {
   content: '';
   position: absolute;
   top: 2rem;
   width: 14px;
   height: 14px;
-  background: #2d5a4a;
+  background: var(--color-timeline-dot);
   border-radius: 50%;
   z-index: 1;
 }
-
 
 .timeline-item.left::before {
   right: -7px;
@@ -74,31 +79,27 @@
   left: -7px;
 }
 
-/* CONTENT BOX */
 .timeline-content {
-  background: #fdfbf7;
+  background: var(--color-timeline-bg);
   padding: 1.5rem;
   border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  box-shadow: var(--shadow-md);
 }
 
-/* DATUM */
 .timeline-date {
   font-family: 'Yuji Syuku', cursive;
-  color: #2d5a4a;
+  color: var(--color-primary);
   font-size: 0.95rem;
   display: block;
   margin-bottom: 0.5rem;
 }
 
-
-/* TITEL */
 .timeline-content h3 {
   margin-top: 0;
   font-family: 'Noto Serif JP', serif;
+  color: var(--color-primary);
 }
 
-/* RESPONSIVE ANPASSUNGEN */
 @media (max-width: 768px) {
   .timeline::before {
     left: 20px;
@@ -121,10 +122,9 @@
   }
 }
 
-
-
-
-/* -- Footer Styles -- */
+/* ================================
+   FOOTER STYLES
+   ================================ */
 html, body {
   height: 100%;
 }
@@ -141,92 +141,248 @@ body {
 }
 
 .footer {
-  text-align: center;
-  padding: 2rem;
-  background: #fdfbf7;
-  font-size: 0.9rem;
-}
-
-.footer-brush {
-  height: 4px;
-  background: linear-gradient(
-    to right,
-    rgba(45,90,74,0.0),
-    rgba(45,90,74,0.6),
-    rgba(45,90,74,0.0)
-  );
-  margin-bottom: 1rem;
-}
-
-
-.footer {
   margin-top: auto;
-  padding: 2rem 3rem;
-  background: #f8faf9;
-  border-top: 1px solid #e0e6e3;
+  background: var(--color-footer-bg);
+  border-top: 1px solid var(--color-footer-border);
 }
 
-
-.footer-brush {
-  width: 100%;
-  margin-bottom: 1.5rem;
-  opacity: 0.5;
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
 }
 
-.footer-inner {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
 }
 
-.footer a {
+.footer-section h4 {
+  font-family: 'Noto Serif JP', serif;
+  color: var(--color-primary);
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-primary);
+  display: inline-block;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
   text-decoration: none;
-  color: #2d5a4a;
+  color: var(--color-text-secondary);
   transition: color 0.3s ease;
 }
 
-.footer a:hover {
-  color: #1a3d32;
+.footer-section a:hover {
+  color: var(--color-primary);
 }
 
+.footer-brush {
+  display: block;
+  width: 100%;
+  height: 4px;
+  opacity: 0.5;
+}
 
+.footer-bottom {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background: var(--color-bg-tertiary);
+  border-top: 1px solid var(--color-border);
+}
 
+.footer-bottom p {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
 
-/*
-.card {
+.footer-tagline {
+  margin-top: 0.5rem !important;
+  font-style: italic;
+  color: var(--color-primary) !important;
+}
+
+/* Mobile Footer */
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .footer-content {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ================================
+   KONTAKTFORMULAR
+   ================================ */
+.contact-form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--color-bg-primary);
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.8rem 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   background: white;
-  border-radius: 0.8rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  padding: 1rem;
-  margin: 1rem 0;
 }
 
-button {
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(45, 90, 74, 0.1);
 }
 
-/* -- Button Styles ScrollTop --*//*
-#scrollTop {
-  position: fixed;
-  right: 1.5rem;
-  bottom: 1.5rem;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  border: none;
-  background: #8c1d18;
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.contact-form button[type="submit"] {
+  background: var(--color-primary);
   color: white;
-  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: all 0.3s ease;
+  align-self: flex-start;
 }
 
-#scrollTop.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
+.contact-form button[type="submit"]:hover {
+  background: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
-*/
+
+/* ================================
+   BUTTONS
+   ================================ */
+.button {
+  display: inline-block;
+  background: var(--color-button-primary);
+  color: var(--color-button-text);
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.button:hover {
+  background: var(--color-button-hover);
+  transform: translateY(-2px);
+}
+
+/* ================================
+   FEATURE CARDS
+   ================================ */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border-light);
+  border-left: 4px solid var(--color-primary);
+  transition: all 0.25s ease;
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-accent);
+}
+
+.feature-card h3 {
+  color: var(--color-primary);
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+/* ================================
+   TRAININGSZEITEN
+   ================================ */
+.training-schedule {
+  background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-tertiary) 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.training-schedule ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.training-schedule li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.training-schedule li:last-child {
+  border-bottom: none;
+}
+
+.training-schedule strong {
+  color: var(--color-primary);
+  font-weight: 600;
+}

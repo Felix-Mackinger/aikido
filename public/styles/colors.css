@@ -1,0 +1,99 @@
+/* 
+  Aikido Website - Farbpalette
+  Einheitliche, harmonische Farben für die gesamte Website
+*/
+
+/* ================================
+   PRIMÄRFARBEN - Waldgrün inspiriert
+   ================================ */
+:root {
+  /* Hauptfarbe - tiefes Waldgrün */
+  --color-primary: #2d5a4a;
+  --color-primary-light: #3d7a64;
+  --color-primary-dark: #1a3d32;
+  
+  /* Sekundärfarbe - warmer Goldton */
+  --color-accent: #c9a227;
+  --color-accent-light: #d4b43a;
+  --color-accent-dark: #a8871f;
+  
+  /* ================================
+     HINTERGRUNDFARBEN
+     ================================ */
+  --color-bg-primary: #fdfbf7;
+  --color-bg-secondary: #f8faf9;
+  --color-bg-tertiary: #f5f2eb;
+  
+  /* ================================
+     TEXTFARBEN
+     ================================ */
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #3d3d3d;
+  --color-text-muted: #666666;
+  --color-text-light: #ffffff;
+  
+  /* ================================
+     BORDERS & TRENNLINIEN
+     ================================ */
+  --color-border: #e0e6e3;
+  --color-border-light: #e8ecea;
+  
+  /* ================================
+     SCHATTEN
+     ================================ */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+  
+  /* ================================
+     TIMELINE
+     ================================ */
+  --color-timeline-line: rgba(45, 90, 74, 0.3);
+  --color-timeline-dot: #2d5a4a;
+  --color-timeline-bg: #fdfbf7;
+  
+  /* ================================
+     BUTTONS
+     ================================ */
+  --color-button-primary: #c9a227;
+  --color-button-hover: #d4b43a;
+  --color-button-text: #1a1a1a;
+  
+  /* ================================
+     LINKS
+     ================================ */
+  --color-link: #2d5a4a;
+  --color-link-hover: #1a3d32;
+  
+  /* ================================
+     NAVIGATION
+     ================================ */
+  --color-nav-bg: #fdfbf7;
+  --color-nav-text: #222222;
+  --color-nav-hover: #2d5a4a;
+  
+  /* ================================
+     FOOTER
+     ================================ */
+  --color-footer-bg: #f5f2eb;
+  --color-footer-border: #e0e6e3;
+}
+
+/* Dark Mode (optional erweiterbar) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-primary: #1a1a1a;
+    --color-bg-secondary: #242424;
+    --color-bg-tertiary: #2d2d2d;
+    
+    --color-text-primary: #f0f0f0;
+    --color-text-secondary: #d0d0d0;
+    --color-text-muted: #a0a0a0;
+    
+    --color-border: #404040;
+    --color-border-light: #333333;
+    
+    --color-footer-bg: #242424;
+    --color-footer-border: #333333;
+  }
+}

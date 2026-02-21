@@ -1,13 +1,61 @@
+---
+const baseUrl = import.meta.env.BASE_URL || '/';
+const currentYear = new Date().getFullYear();
+---
+
 <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-grid">
+      <!-- Über Dojo -->
+      <div class="footer-section">
+        <h4>Über das Dojo</h4>
+        <ul>
+          <li><a href={`${baseUrl}ueber-uns`}>Über uns</a></li>
+          <li><a href={`${baseUrl}training`}>Training</a></li>
+          <li><a href={`${baseUrl}trainingsplan`}>Trainingsplan</a></li>
+          <li><a href={`${baseUrl}foto-galerie`}>Galerie</a></li>
+        </ul>
+      </div>
+
+      <!-- Kontakt -->
+      <div class="footer-section">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href={`${baseUrl}kontakt`}>Kontaktformular</a></li>
+          <li><a href={`${baseUrl}termine`}>Termine</a></li>
+          <li><a href={`${baseUrl}news`}>Aktuelles</a></li>
+        </ul>
+      </div>
+
+      <!-- Zeiten -->
+      <div class="footer-section">
+        <h4>Trainingszeiten</h4>
+        <ul>
+          <li><a href={`${baseUrl}trainingsplan`}>Montag</a></li>
+          <li><a href={`${baseUrl}trainingsplan`}>Mittwoch</a></li>
+          <li><a href={`${baseUrl}trainingsplan`}>Freitag</a></li>
+        </ul>
+      </div>
+
+      <!-- Rechtliches -->
+      <div class="footer-section">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href={`${baseUrl}legal`}>Impressum</a></li>
+          <li><a href={`${baseUrl}legal`}>Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <img
-  src={`${import.meta.env.BASE_URL}assets/brush.svg`}
-  alt=""
-  class="footer-brush"
-/>
+    src={`${baseUrl}assets/brush.svg`}
+    alt=""
+    class="footer-brush"
+  />
 
-
-  <div class="footer-inner">
-    <p>© {new Date().getFullYear()} Aikido Dojo Braunau</p>
-    <a href={`${import.meta.env.BASE_URL}legal`}>Impressum & Datenschutz</a>
+  <div class="footer-bottom">
+    <p>© {currentYear} Aikido Dojo Braunau</p>
+    <p class="footer-tagline">Die Kunst der Harmonie</p>
   </div>
 </footer>

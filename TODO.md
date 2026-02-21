@@ -1,22 +1,33 @@
-# Aikido Website Fixes - Progress Tracker
+# TODO - Aikido Website Updates
 
-## Phase 1: Core Fixes
-- [x] Fix astro.config.mjs - add static output configuration
-- [x] Fix foto-galerie file extension (add .md)
-- [x] Update BaseLayout.astro with SEO meta tags
-- [x] Fix Footer.astro links with proper base URL
-- [x] Update Navigation.astro with all pages
-- [x] Create 404.astro error page
-- [ ] Add sitemap integration (optional)
+## Erledigt ✅
 
-## Phase 2: Testing & Verification
-- [x] Run npm install (if needed)
-- [x] Run npm run build
-- [x] Run npm run preview
-- [x] Verify all pages render correctly
+1. **Farbpalette verbessern** ✅
+   - Einheitliche, harmonische Farbpalette in colors.css
+   - Waldgrün inspiriert mit warmen Gold-Akzenten
+   - CSS Variables für einfache Anpassung
 
+2. **Footer anpassen** ✅
+   - 4 Spalten: Über Dojo, Kontakt, Zeiten, Rechtliches
+   - Symmetrisches Grid-Layout
+   - Responsive für Mobile
 
-## Phase 3: Deployment
-- [ ] Commit changes
-- [ ] Push to GitHub
-- [ ] Verify GitHub Pages deployment
+3. **Kontaktformular verschönern** ✅
+   - Symmetrisches Layout
+   - Moderne Gestaltung mit Schatten
+   - Verbesserte Input-Felder
+
+4. **Sprachauswahl hinzufügen** ✅
+   - Dropdown oben rechts in der Navigation
+   - Deutsch, Englisch, Japanisch
+   - Mit Icons
+
+5. **Homepage "Terminvereinbaren"** ✅
+   - Neue Seite erstellt
+   - Kontaktformular mit relevanten Feldern
+   - Informationen zum Erstkontakt
+   - Button in Navigation hinzugefügt
+
+6. **Smooth Scroll & Animationen** ✅
+   - Sanftes Scrollen aktiviert
+   - Fade-in Animationen für Inhalte

@@ -1,21 +1,166 @@
+---
+const baseUrl = import.meta.env.BASE_URL || '/';
+---
+
 <nav class="nav">
+  <div class="nav-top">
+    <!-- Language Selector -->
+    <div class="lang-selector">
+      <button class="lang-btn" aria-label="Sprache ändern">
+        <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="2" y1="12" x2="22" y2="12"/>
+          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+        </svg>
+        <span>DE</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
+      <div class="lang-dropdown">
+        <a href="#" class="lang-option active">🇩🇪 Deutsch</a>
+        <a href="#" class="lang-option">🇬🇧 English</a>
+        <a href="#" class="lang-option">🇯🇵 日本語</a>
+      </div>
+    </div>
+  </div>
+
   <div class="nav-inner">
-    <a href={`${import.meta.env.BASE_URL}`} class="logo">Aikido</a>
+    <a href={baseUrl} class="logo">Aikido</a>
+
+    <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
 
     <ul class="nav-links">
-      <li><a href={`${import.meta.env.BASE_URL}ueber-uns`}>Über uns</a></li>
-      <li><a href={`${import.meta.env.BASE_URL}training`}>Training</a></li>
-      <li><a href={`${import.meta.env.BASE_URL}trainingsplan`}>Trainingsplan</a></li>
-      <li><a href={`${import.meta.env.BASE_URL}termine`}>Termine</a></li>
-      <li><a href={`${import.meta.env.BASE_URL}news`}>News</a></li>
-      <li><a href={`${import.meta.env.BASE_URL}foto-galerie`}>Galerie</a></li>
-      <li><a href={`${import.meta.env.BASE_URL}kontakt`}>Kontakt</a></li>
+      <li>
+        <a href={`${baseUrl}ueber-uns`}>
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          <span>Über uns</span>
+        </a>
+      </li>
+      <li>
+        <a href={`${baseUrl}training`}>
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+            <line x1="6" y1="1" x2="6" y2="4"/>
+            <line x1="10" y1="1" x2="10" y2="4"/>
+            <line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+          <span>Training</span>
+        </a>
+      </li>
+      <li>
+        <a href={`${baseUrl}trainingsplan`}>
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          <span>Trainingsplan</span>
+        </a>
+      </li>
+      <li>
+        <a href={`${baseUrl}termine`}>
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+            <path d="M9 16l2 2 4-4"/>
+          </svg>
+          <span>Termine</span>
+        </a>
+      </li>
+      <li>
+        <a href={`${baseUrl}news`}>
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/>
+            <path d="M18 14h-8"/>
+            <path d="M15 18h-5"/>
+            <path d="M10 6h8v4h-8V6Z"/>
+          </svg>
+          <span>News</span>
+        </a>
+      </li>
+      <li>
+        <a href={`${baseUrl}foto-galerie`}>
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <circle cx="8.5" cy="8.5" r="1.5"/>
+            <polyline points="21 15 16 10 5 21"/>
+          </svg>
+          <span>Galerie</span>
+        </a>
+      </li>
+      <li>
+        <a href={`${baseUrl}termin-vereinbaren`}>
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+            <path d="M12 14l2 2 4-4"/>
+          </svg>
+          <span>Termin</span>
+        </a>
+      </li>
+      <li>
+        <a href={`${baseUrl}kontakt`}>
+          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <span>Kontakt</span>
+        </a>
+      </li>
     </ul>
   </div>
 
   <img
-    src={`${import.meta.env.BASE_URL}assets/brush.svg`}
+    src={`${baseUrl}assets/brush.svg`}
     alt=""
     class="nav-brush"
   />
 </nav>
+
+<script>
+  // Menu Toggle
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  
+  menuToggle?.addEventListener('click', () => {
+    const isOpen = navLinks?.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.classList.toggle('open');
+  });
+
+  // Close menu when clicking a link
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks?.classList.remove('open');
+      menuToggle?.classList.remove('open');
+      menuToggle?.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Language Selector
+  const langBtn = document.querySelector('.lang-btn');
+  const langDropdown = document.querySelector('.lang-dropdown');
+  
+  langBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    langDropdown?.classList.toggle('show');
+    langBtn?.classList.toggle('active');
+  });
+
+  document.addEventListener('click', () => {
+    langDropdown?.classList.remove('show');
+    langBtn?.classList.remove('active');
+  });
+</script>
