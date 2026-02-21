@@ -6,7 +6,7 @@ order: 1
 <section class="hero">
   <h1>Willkommen im Aikido Dojo</h1>
   <p>Balance & Harmonie in Bewegung</p>
-  <a href="kontakt" class="button">Probetraining vereinbaren</a>
+<a href="termin-vereinbaren" class="button">Probetraining vereinbaren</a>
 </section>
 
 <div class="brush-text fade-in" style="--delay:0.2s">

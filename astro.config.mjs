@@ -4,7 +4,7 @@ export default defineConfig({
   output: 'static',
   base: '/aikido/',
   site: 'https://felix-mackinger.github.io/aikido/',
-  outDir: 'dist',
+  outDir: 'docs',
   build: {
     format: 'file'
   }
