@@ -1,33 +1,23 @@
-# TODO - Aikido Website Updates
+# TODO - Aikido Website Updates - ERLEDIGT ✅
 
-## Erledigt ✅
+## 1. GitHub Actions Workflow für automatische Deployment ✅
+- [x] GitHub Actions Workflow erstellt (.github/workflows/deploy.yml)
+- [x] Workflow pusht automatisch auf gh-pages Branch
 
-1. **Farbpalette verbessern** ✅
-   - Einheitliche, harmonische Farbpalette in colors.css
-   - Waldgrün inspiriert mit warmen Gold-Akzenten
-   - CSS Variables für einfache Anpassung
+## 2. Brush SVG natürlichlicher gemacht ✅
+- [x] Brush SVG mit organischeren Pinselstrichen versehen
+- [x] Farben auf Waldgrün (#2d5a4a) geändert
 
-2. **Footer anpassen** ✅
-   - 4 Spalten: Über Dojo, Kontakt, Zeiten, Rechtliches
-   - Symmetrisches Grid-Layout
-   - Responsive für Mobile
+## 3. Farben in separate CSS-Datei ausgelagert ✅
+- [x] public/styles/colors.css mit CSS Variables erstellt
+- [x] Alle Farben als CSS Variables definiert
 
-3. **Kontaktformular verschönern** ✅
-   - Symmetrisches Layout
-   - Moderne Gestaltung mit Schatten
-   - Verbesserte Input-Felder
+## 4. News-System mit automatischer Generierung ✅
+- [x] Content Collection für News (src/content/news/) vorhanden
+- [x] src/pages/news.astro für automatische Generierung vorhanden
+- [x] src/content/config.ts mit news Collection konfiguriert
+- [x] Bestehende News-Einträge migriert
+- [x] Alte news.md entfernt
 
-4. **Sprachauswahl hinzufügen** ✅
-   - Dropdown oben rechts in der Navigation
-   - Deutsch, Englisch, Japanisch
-   - Mit Icons
-
-5. **Homepage "Terminvereinbaren"** ✅
-   - Neue Seite erstellt
-   - Kontaktformular mit relevanten Feldern
-   - Informationen zum Erstkontakt
-   - Button in Navigation hinzugefügt
-
-6. **Smooth Scroll & Animationen** ✅
-   - Sanftes Scrollen aktiviert
-   - Fade-in Animationen für Inhalte
+## 5. Anleitung erstellt ✅
+- [x] ANLEITUNG.md mit allen Informationen erstellt
