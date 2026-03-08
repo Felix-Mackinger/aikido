@@ -17,23 +17,25 @@ const currentYear = new Date().getFullYear();
         </ul>
       </div>
 
-      <!-- Kontakt -->
+      <!-- Kontakt & Info -->
       <div class="footer-section">
-        <h4>Kontakt</h4>
+        <h4>Kontakt & Info</h4>
         <ul>
-          <li><a href={`${baseUrl}kontakt`}>Kontaktformular</a></li>
+          <li><a href={`${baseUrl}kontakt`}>Kontakt</a></li>
+          <li><a href={`${baseUrl}termin-vereinbaren`}>Termin vereinbaren</a></li>
           <li><a href={`${baseUrl}termine`}>Termine</a></li>
           <li><a href={`${baseUrl}news`}>Aktuelles</a></li>
         </ul>
       </div>
 
-      <!-- Zeiten -->
+      <!-- Trainingszeiten -->
       <div class="footer-section">
         <h4>Trainingszeiten</h4>
         <ul>
           <li><a href={`${baseUrl}trainingsplan`}>Montag</a></li>
           <li><a href={`${baseUrl}trainingsplan`}>Mittwoch</a></li>
           <li><a href={`${baseUrl}trainingsplan`}>Freitag</a></li>
+          <li><a href={`${baseUrl}training`}>Für Anfänger</a></li>
         </ul>
       </div>
 
@@ -44,6 +46,27 @@ const currentYear = new Date().getFullYear();
           <li><a href={`${baseUrl}legal`}>Impressum</a></li>
           <li><a href={`${baseUrl}legal`}>Datenschutz</a></li>
         </ul>
+        
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <a href="mailto:info@aikido-braunau.at" aria-label="E-Mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -56,6 +79,32 @@ const currentYear = new Date().getFullYear();
 
   <div class="footer-bottom">
     <p>© {currentYear} Aikido Dojo Braunau</p>
-    <p class="footer-tagline">Die Kunst der Harmonie</p>
+    <p class="footer-tagline">Die Kunst der Harmonie | 合気道</p>
   </div>
 </footer>
+
+<style>
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-bg-tertiary);
+  color: var(--color-primary);
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  background: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+</style>

@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "about": "关于我们",
+    "training": "训练",
+    "schedule": "时间表",
+    "events": "活动",
+    "news": "新闻",
+    "gallery": "画廊",
+    "appointment": "预约",
+    "contact": "联系"
+  },
+  "hero": {
+    "title": "欢迎来到合气道道场",
+    "subtitle": "动作中的平衡与和谐",
+    "cta": "预约体验训练"
+  },
+  "home": {
+    "philosophy": "合気道 – 和谐之道",
+    "quote": "与他人能量合一的道路",
+    "aboutTitle": "我们的道场合气道",
+    "aboutText": "合气道是一项不基于竞争的日本武术。核心是 正念、身体意识和相互尊重。",
+    "features": {
+      "calm": {
+        "title": "安静的训练",
+        "desc": "在轻松的气氛中集中练习，没有成绩压力"
+      },
+      "levels": {
+        "title": "适合所有级别",
+        "desc": "对初学者和进阶者开放"
+      },
+      "tradition": {
+        "title": "传统与现代",
+        "desc": "真正的根源与当代教学方法"
+      },
+      "competition": {
+        "title": "无竞争",
+        "desc": "共同学习是重点，而不是比较"
+      }
+    },
+    "schedule": "训练时间",
+    "scheduleNote": "免费体验训练随时可行 - 欢迎光临！",
+    "suitability": {
+      "title": "合气道适合谁？",
+      "intro": "合气道适合所有年龄段的人。您不需要任何先验知识，只需要好奇心和开放的心态。",
+      "bullet1": "寻找无竞争运动的人",
+      "bullet2": "日常压力的平衡",
+      "bullet3": "姿势、平衡和存在感的训练",
+      "bullet4": "对亚洲武术感兴趣"
+    },
+    "cta": {
+      "title": "感兴趣？",
+      "text": "来看看训练吧 - 或者联系我们。",
+      "button": "联系我们 →"
+    },
+    "facts": {
+      "title": "我们的数字道场",
+      "members": "活跃会员",
+      "years": "传统年数",
+      "weekly": "每周训练",
+      "exams": "通过考试"
+    }
+  },
+  "contact": {
+    "title": "联系",
+    "email": "电子邮件",
+    "phone": "电话",
+    "address": "地址",
+    "hours": "开放时间",
+    "form": {
+      "title": "联系表格",
+      "subtitle": "写信给我们 - 我们会尽快回复！",
+      "name": "姓名",
+      "namePlaceholder": "您的姓名",
+      "email": "电子邮件",
+      "emailPlaceholder": "your@email.com",
+      "subject": "主题",
+      "subjectPlaceholder": "有什么事？",
+      "message": "留言",
+      "messagePlaceholder": "您的留言...",
+      "submit": "发送留言"
+    },
+    "location": "在哪里找到我们",
+    "lookingForward": "期待您的光临！ 🙏"
+  },
+  "impressum": {
+    "title": "法律信息",
+    "info": "根据 §5 ECG 的信息",
+    "association": "合气道协会",
+    "address": "地址",
+    "contact": "联系方式",
+    "phone": "电话",
+    "email": "电子邮件",
+    "director": "负责人",
+    "registration": "注册",
+    "disclaimer": "免责声明",
+    "content": "网站内容已精心创建。但是，我们无法保证内容的准确性、完整性或时效性。",
+    "maps": "找到我们"
+  },
+  "footer": {
+    "about": "关于道场",
+    "contact": "联系方式",
+    "times": "训练时间",
+    "legal": "法律信息",
+    "copyright": "© {year} 合气道道场 Braunau",
+    "tagline": "和谐之道"
+  },
+  "training": {
+    "title": "训练",
+    "whatIs": "什么是合气道？",
+    "philosophy": "哲学",
+    "beginners": "初学者",
+    "equipment": "装备"
+  },
+  "gallery": {
+    "title": "照片库",
+    "intro": "我们道场的印象：",
+    "comingSoon": "照片即将添加。"
+  },
+  "news": {
+    "title": "新闻与活动",
+    "readMore": "阅读更多"
+  },
+  "common": {
+    "learnMore": "了解更多",
+    "back": "返回",
+    "next": "下一步",
+    "download": "下载",
+    "materials": "资料"
+  }
+}
+

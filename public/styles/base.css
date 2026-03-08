@@ -191,6 +191,8 @@
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   margin: 2rem 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .content form label {
@@ -204,6 +206,7 @@
 .content form input[type="email"],
 .content form textarea {
   width: 100%;
+  max-width: 100%;
   padding: 0.8rem 1rem;
   margin-top: 0.4rem;
   border: 2px solid #e0e6e3;
@@ -212,6 +215,7 @@
   font-size: 1rem;
   transition: all 0.3s ease;
   background: white;
+  box-sizing: border-box;
 }
 
 .content form input[type="text"]:focus,
@@ -238,6 +242,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(45,90,74,0.3);
+  box-sizing: border-box;
 }
 
 .content form button[type="submit"]:hover {
@@ -331,5 +336,409 @@
   
   .content form {
     padding: 1.5rem;
+  }
+}
+
+/* ================================
+   ENHANCED HERO SECTION
+   ================================ */
+.hero-home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+  padding: 4rem 6rem;
+  position: relative;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.8rem;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  opacity: 0.95;
+  margin-bottom: 2.5rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-decoration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-kanji {
+  font-family: 'Yuji Syuku', cursive;
+  font-size: 18rem;
+  color: rgba(255,255,255,0.08);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.button-primary {
+  background: #c9a227;
+  color: #1a1a1a;
+}
+
+.button-primary:hover {
+  background: #d4b43a;
+}
+
+.button-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.button-secondary:hover {
+  border-color: white;
+  background: rgba(255,255,255,0.1);
+}
+
+.button-outline {
+  background: transparent;
+  color: #2d5a4a;
+  border: 2px solid #2d5a4a;
+}
+
+.button-outline:hover {
+  background: #2d5a4a;
+  color: white;
+}
+
+/* ================================
+   BIG FACTS SECTION
+   ================================ */
+.big-facts {
+  background: linear-gradient(135deg, #2d5a4a 0%, #1a3d32 100%);
+  padding: 5rem 2rem;
+  margin: 0;
+}
+
+.facts-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.facts-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.fact-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: transform 0.3s ease;
+}
+
+.fact-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.08);
+}
+
+.fact-number {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #c9a227;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.fact-label {
+  color: rgba(255,255,255,0.85);
+  font-size: 1rem;
+  display: block;
+}
+
+/* ================================
+   ZEN QUOTE SECTION
+   ================================ */
+.content-block-zen {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fdfbf7;
+}
+
+.zen-quote {
+  max-width: 700px;
+  margin: 3rem auto 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f8faf9 0%, #f0f4f2 100%);
+  border-radius: 12px;
+  border-left: none;
+}
+
+.zen-quote p {
+  font-size: 1.4rem;
+  font-family: 'Noto Serif JP', serif;
+  color: #2d5a4a;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.zen-quote cite {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ================================
+   SPACIOUS CONTENT BLOCKS
+   ================================ */
+.content-block-spacious,
+.features-section,
+.schedule-section,
+.suitability-section {
+  padding: 5rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content-block-spacious h2,
+.features-section h2,
+.schedule-section h2,
+.suitability-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.lead-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #3d3d3d;
+}
+
+/* ================================
+   FEATURES SECTION
+   ================================ */
+.features-section {
+  background: #f8faf9;
+}
+
+.feature-card .feature-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ================================
+   SUITABILITY GRID
+   ================================ */
+.suitability-section {
+  background: linear-gradient(180deg, #fff 0%, #f8faf9 100%);
+}
+
+.suitability-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.suitability-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.suitability-item:hover {
+  box-shadow: 0 6px 20px rgba(45,90,74,0.12);
+  transform: translateY(-3px);
+}
+
+.suitability-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.suitability-item h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: #2d5a4a;
+}
+
+.suitability-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+/* ================================
+   CTA SECTION
+   ================================ */
+.cta-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #f8faf9 0%, #eef2f0 100%);
+}
+
+.cta-box {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.cta-box h2 {
+  margin-bottom: 1rem;
+  color: #2d5a4a;
+}
+
+.cta-box p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ================================
+   TRAINING SCHEDULE ENHANCED
+   ================================ */
+.schedule-section {
+  background: #fff;
+}
+
+.schedule-section .training-schedule {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.schedule-note {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #2d5a4a;
+}
+
+.training-schedule .day {
+  font-weight: 600;
+  color: #2d5a4a;
+  min-width: 100px;
+}
+
+.training-schedule .time {
+  flex: 1;
+  text-align: center;
+}
+
+.training-schedule .level {
+  font-size: 0.85rem;
+  color: #888;
+  background: #f5f5f5;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* ================================
+   RESPONSIVE ENHANCEMENTS
+   ================================ */
+@media (max-width: 1024px) {
+  .hero-home {
+    padding: 3rem 2rem;
+    min-height: 70vh;
+  }
+  
+  .hero-kanji {
+    font-size: 12rem;
+    opacity: 0.05;
+  }
+  
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-home {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    min-height: 60vh;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .hero-decoration {
+    display: none;
+  }
+  
+  .hero-cta-group {
+    justify-content: center;
+  }
+  
+  .facts-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .fact-number {
+    font-size: 2.5rem;
+  }
+  
+  .suitability-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .content-block-spacious,
+  .features-section,
+  .schedule-section,
+  .suitability-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .cta-box {
+    padding: 2rem 1.5rem;
   }
 }

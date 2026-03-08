@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "about": "About Us",
+    "training": "Training",
+    "schedule": "Schedule",
+    "events": "Events",
+    "news": "News",
+    "gallery": "Gallery",
+    "appointment": "Appointment",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to Aikido Dojo",
+    "subtitle": "Balance & Harmony in Motion",
+    "cta": "Schedule Trial Training"
+  },
+  "home": {
+    "philosophy": "合気道 – The Way of Harmony",
+    "quote": "The path of aligning one's energy with that of others",
+    "aboutTitle": "Aikido in Our Dojo",
+    "aboutText": "Aikido is a Japanese martial art that does not focus on competition. At the center are mindfulness, body awareness, and respectful interaction with others.",
+    "features": {
+      "calm": {
+        "title": "Calm Training",
+        "desc": "Focused exercises in a relaxed atmosphere without performance pressure"
+      },
+      "levels": {
+        "title": "For All Levels",
+        "desc": "Open to beginners and advanced practitioners alike"
+      },
+      "tradition": {
+        "title": "Tradition & Modernity",
+        "desc": "Authentic roots with contemporary teaching methods"
+      },
+      "competition": {
+        "title": "No Competition",
+        "desc": "Joint learning is the focus, not comparison"
+      }
+    },
+    "schedule": "Training Times",
+    "scheduleNote": "A free trial training is always possible - just come by!",
+    "suitability": {
+      "title": "Who is Aikido suitable for?",
+      "intro": "Aikido is suitable for people of all ages. You don't need any prior knowledge, just curiosity and openness.",
+      "bullet1": "People looking for movement without competition",
+      "bullet2": "Balance to stressful everyday life",
+      "bullet3": "Training of posture, balance and presence",
+      "bullet4": "Interest in Asian martial arts"
+    },
+    "cta": {
+      "title": "Interested?",
+      "text": "Come by and watch a training session - or get in touch with us.",
+      "button": "Get in Touch →"
+    },
+    "facts": {
+      "title": "Our Dojo in Numbers",
+      "members": "Active Members",
+      "years": "Years of Tradition",
+      "weekly": "Weekly Trainings",
+      "exams": "Exams Passed"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "hours": "Opening Hours",
+    "form": {
+      "title": "Contact Form",
+      "subtitle": "Write to us - we'll get back to you as soon as possible!",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is it about?",
+      "message": "Message",
+      "messagePlaceholder": "Your message to us...",
+      "submit": "Send Message"
+    },
+    "location": "Where to Find Us",
+    "lookingForward": "We look forward to you! 🙏"
+  },
+  "impressum": {
+    "title": "Imprint",
+    "info": "Information according to §5 ECG",
+    "association": "Aikido Association",
+    "address": "Address",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "director": "Director",
+    "registration": "Registration",
+    "disclaimer": "Disclaimer",
+    "content": "The content of this website was created with great care. However, we cannot guarantee the accuracy, completeness or timeliness of the content.",
+    "maps": "Find Us"
+  },
+  "footer": {
+    "about": "About Dojo",
+    "contact": "Contact",
+    "times": "Training Times",
+    "legal": "Legal",
+    "copyright": "© {year} Aikido Dojo Braunau",
+    "tagline": "The Art of Harmony"
+  },
+  "training": {
+    "title": "Training",
+    "whatIs": "What is Aikido?",
+    "philosophy": "Philosophy",
+    "beginners": "For Beginners",
+    "equipment": "Equipment"
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "intro": "Impressions from our dojo:",
+    "comingSoon": "Photos coming soon."
+  },
+  "news": {
+    "title": "News & Events",
+    "readMore": "Read more"
+  },
+  "common": {
+    "learnMore": "Learn more",
+    "back": "Back",
+    "next": "Next",
+    "download": "Download",
+    "materials": "Materials"
+  }
+}
+

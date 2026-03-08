@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "about": "À propos",
+    "training": "Entraînement",
+    "schedule": "Horaire",
+    "events": "Événements",
+    "news": "Actualités",
+    "gallery": "Galerie",
+    "appointment": "Rendez-vous",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Bienvenue au Dojo Aikido",
+    "subtitle": "Équilibre & Harmonie en Mouvement",
+    "cta": "Planifier un Entraînement d'Essai"
+  },
+  "home": {
+    "philosophy": "合気道 – La Voie de l'Harmonie",
+    "quote": "Le chemin pour aligner son énergie avec celle des autres",
+    "aboutTitle": "L'Aikido dans Notre Dojo",
+    "aboutText": "L'Aikido est un art martial japonais qui ne repose pas sur la compétition. Au centre se trouvent la pleine conscience, la conscience corporelle et le respect mutuel.",
+    "features": {
+      "calm": {
+        "title": "Entraînement Calme",
+        "desc": "Exercices concentrés dans une atmosphère détendue sans pression de performance"
+      },
+      "levels": {
+        "title": "Pour Tous les Niveaux",
+        "desc": "Ouvert aux débutants et aux avancés"
+      },
+      "tradition": {
+        "title": "Tradition & Modernité",
+        "desc": "Racines authentiques avec des méthodes d'enseignement contemporaines"
+      },
+      "competition": {
+        "title": "Pas de Compétition",
+        "desc": "L'apprentissage commun est au premier plan, pas la comparaison"
+      }
+    },
+    "schedule": "Horaires d'Entraînement",
+    "scheduleNote": "Un entraînement d'essai gratuit est toujours possible - passez simplement !",
+    "suitability": {
+      "title": "Pour qui l'Aikido est-il adapté ?",
+      "intro": "L'Aikido convient aux personnes de tout âge. Vous n'avez besoin d'aucune connaissance préalable, seulement de curiosité et d'ouverture.",
+      "bullet1": "Personnes recherchant du mouvement sans compétition",
+      "bullet2": "Équilibre au stress quotidien",
+      "bullet3": "Entraînement de la posture, de l'équilibre et de la présence",
+      "bullet4": "Intérêt pour les arts martiaux asiatiques"
+    },
+    "cta": {
+      "title": "Intéressé ?",
+      "text": "Venez regarder un entraînement - ou contactez-nous.",
+      "button": "Nous contacter →"
+    },
+    "facts": {
+      "title": "Notre Dojo en Chiffres",
+      "members": "Membres Actifs",
+      "years": "Années de Tradition",
+      "weekly": "Entraînements Hebdomadaires",
+      "exams": "Examens Réussis"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "hours": "Heures d'Ouverture",
+    "form": {
+      "title": "Formulaire de Contact",
+      "subtitle": "Écrivez-nous - nous vous répondrons dès que possible !",
+      "name": "Nom",
+      "namePlaceholder": "Votre nom",
+      "email": "E-mail",
+      "emailPlaceholder": "votre@email.com",
+      "subject": "Sujet",
+      "subjectPlaceholder": "De quoi s'agit-il ?",
+      "message": "Message",
+      "messagePlaceholder": "Votre message pour nous...",
+      "submit": "Envoyer le Message"
+    },
+    "location": "Où Nous Trouver",
+    "lookingForward": "Nous avons hâte de vous voir ! 🙏"
+  },
+  "impressum": {
+    "title": "Mentions Légales",
+    "info": "Informations conformément au §5 ECG",
+    "association": "Association Aikido",
+    "address": "Adresse",
+    "contact": "Contact",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "director": "Directeur",
+    "registration": "Inscription",
+    "disclaimer": "Clause de non-responsabilité",
+    "content": "Le contenu de ce site web a été créé avec le plus grand soin. Cependant, nous ne pouvons pas garantir l'exhaustivité ou l'actualité du contenu.",
+    "maps": "Nous Trouver"
+  },
+  "footer": {
+    "about": "À propos du Dojo",
+    "contact": "Contact",
+    "times": "Horaires d'Entraînement",
+    "legal": "Mentions Légales",
+    "copyright": "© {year} Aikido Dojo Braunau",
+    "tagline": "L'Art de l'Harmonie"
+  },
+  "training": {
+    "title": "Entraînement",
+    "whatIs": "Qu'est-ce que l'Aikido ?",
+    "philosophy": "Philosophie",
+    "beginners": "Pour les Débutants",
+    "equipment": "Équipement"
+  },
+  "gallery": {
+    "title": "Galerie Photo",
+    "intro": "Impressions de notre dojo :",
+    "comingSoon": "Photos à venir."
+  },
+  "news": {
+    "title": "Actualités & Événements",
+    "readMore": "En savoir plus"
+  },
+  "common": {
+    "learnMore": "En savoir plus",
+    "back": "Retour",
+    "next": "Suivant",
+    "download": "Télécharger",
+    "materials": "Matériaux"
+  }
+}
+

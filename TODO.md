@@ -1,23 +1,38 @@
-# TODO - Aikido Website Updates - ERLEDIGT ✅
+# TODO - Aikido Website Verbesserungen
 
-## 1. GitHub Actions Workflow für automatische Deployment ✅
-- [x] GitHub Actions Workflow erstellt (.github/workflows/deploy.yml)
-- [x] Workflow pusht automatisch auf gh-pages Branch
+## Phase 1: Homepage Redesign
+- [x] 1.1 Big Facts Section erstellen (Mitglieder, Jahre Erfahrung, etc.)
+- [x] 1.2 Hero Section mit stärkeren CTAs verbessern
+- [x] 1.3 Whitespace-Variation einbauen
+- [x] 1.4 Lockmittel für Probetraining prominent platzieren
 
-## 2. Brush SVG natürlichlicher gemacht ✅
-- [x] Brush SVG mit organischeren Pinselstrichen versehen
-- [x] Farben auf Waldgrün (#2d5a4a) geändert
+## Phase 2: Mehrsprachigkeit (DE/EN/FR/JP)
+- [x] 2.1 Übersetzungs-JSON-Dateien erstellen (en.json, fr.json, jp.json)
+- [x] 2.2 Navigation für Sprachwechsel vorbereiten
+- [x] 2.3 BaseLayout für i18n vorbereiten
+- [x] 2.4 Language Switcher funktional machen
 
-## 3. Farben in separate CSS-Datei ausgelagert ✅
-- [x] public/styles/colors.css mit CSS Variables erstellt
-- [x] Alle Farben als CSS Variables definiert
+## Phase 3: Kontaktseite
+- [x] 3.1 Google Maps Embed integrieren
+- [x] 3.2 Vollständige Kontaktdaten (echte Adresse, Telefon, E-Mail)
+- [x] 3.3 Where to Find Sektion
+- [x] 3.4 Kontaktformular mit Validierung
 
-## 4. News-System mit automatischer Generierung ✅
-- [x] Content Collection für News (src/content/news/) vorhanden
-- [x] src/pages/news.astro für automatische Generierung vorhanden
-- [x] src/content/config.ts mit news Collection konfiguriert
-- [x] Bestehende News-Einträge migriert
-- [x] Alte news.md entfernt
+## Phase 4: Impressum & Downloads
+- [x] 4.1 Vollständiges Impressum erstellen
+- [x] 4.2 Separate Datenschutzseite
+- [x] 4.3 Download-Sektion für Materialien
 
-## 5. Anleitung erstellt ✅
-- [x] ANLEITUNG.md mit allen Informationen erstellt
+## Phase 5: Galerie & Weitere Seiten
+- [x] 5.1 Galerie mit Grid-Layout
+- [x] 5.2 News-Seite optimieren
+- [x] 5.3 Footer mit vollständigen Links
+
+## Phase 6: Styling & UX
+- [x] 6.1 Whitespace überall konsistent
+- [x] 6.2 Animations und Transitions
+- [x] 6.3 Responsive Design optimieren
+
+## Abgeschlossen ✅
+Alle Hauptaufgaben sind erledigt!
+
