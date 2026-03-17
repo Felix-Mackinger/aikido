@@ -16,11 +16,11 @@ order: 99
 <div class="info-grid">
 <div class="info-item">
 <strong>Name des Vereins</strong>
-<span>Aikido Dojo Braunau</span>
+<span>Aikido Dojo Hochburg-Ach</span>
 </div>
 <div class="info-item">
 <strong>Adresse</strong>
-<span>Stadtweg 28<br>5280 Braunau am Inn<br>Österreich</span>
+<span>Athaler Str. 1<br>5122 Duttendorf<br>Österreich</span>
 </div>
 <div class="info-item">
 <strong>Telefon</strong>
@@ -28,7 +28,7 @@ order: 99
 </div>
 <div class="info-item">
 <strong>E-Mail</strong>
-<span><a href="mailto:info@aikido-braunau.at">info@aikido-braunau.at</a></span>
+<span><a href="mailto:dojo@aikido-hochburg-ach.at">dojo@aikido-hochburg-ach.at</a></span>
 </div>
 </div>
 
@@ -118,18 +118,23 @@ order: 99
 
 ---
 
-## Wo du uns findest
+## Standort
 
 <div class="map-container">
 <iframe 
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2678.5!2d13.0!3d48.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDAwJzAwLjAiTiAxM8KwMDAnMDAuMCJF!5e0!3m2!1sde!2sat!4v1234567890"
+  src="https://www.openstreetmap.org/export/embed.html?bbox=12.925%2C48.167%2C12.945%2C48.187&layer=mapnik&marker=48.177%2C12.935"
   width="100%" 
   height="350" 
-  style="border:0;" 
-  allowfullscreen="" 
-  loading="lazy" 
-  referrerpolicy="no-referrer-when-downgrade">
+  style="border-radius: 12px; border: none;"
+  loading="lazy"
+  title="Standort auf der Karte">
 </iframe>
+<a href="https://www.openstreetmap.org/?mlat=48.177&mlon=12.935#map=15/48.177/12.935" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   class="map-link">
+  ↗ In Maps öffnen
+</a>
 </div>
 
 ---
@@ -208,6 +213,31 @@ order: 99
   overflow: hidden;
   margin-top: 1rem;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 12px;
+}
+
+.map-link {
+  display: inline-block;
+  text-align: center;
+  padding: 0.6rem 1rem;
+  background: #2d5a4a;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.map-link:hover {
+  background: #1a3d32;
 }
 
 @media (max-width: 768px) {
