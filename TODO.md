@@ -1,15 +1,19 @@
-# Layout Improvements TODO
+# Site Restructure Progress
 
-## Plan Steps (Approved)
+**Club:** Wanomichi Takemusu Aikido Hochburg-Ach (WTA Hochburg-Ach), 48°09'28.4"N 12°50'16.7"E
 
-- [x] **Step 1: Expand global text space** - Edit base.css (.content, sections max-width/padding)
-- [ ] **Step 2: Gray out homepage stats** - Edit base.css (.fact-number)
-- [ ] **Step 3: Center hero + Japanese Kanji style** - Edit base.css (.hero-home, .hero-kanji)
-- [ ] **Step 4: Ensure sections centered all pages** - Edit base.css/components.css (grids)
-- [ ] **Step 5: Navbar Aikido darker + animations** - Edit navigation.css (.logo), add transitions
-- [ ] **Step 6: Verify other pages** - search_files other .md for sections
-- [ ] **Step 7: Test** - npm run dev, responsive check
-- [ ] **Complete** - attempt_completion
+**Steps:**
+- [x] Plan created
+- [ ] 1. index.md restructure
+- [ ] 2. ueber-uns.md expand
+- [ ] 3. termine.md horizontal timeline
+- [ ] 4. Merge impressum/kontakt
+- [ ] 5. Update nav
+- [ ] 6. Global name/coords update
+- [ ] 7. Delete redundant
+- [ ] 8. CSS timeline
+- [ ] 9. Build/deploy
 
-**Current Progress:** All steps complete. Layout improvements implemented: wider text space, gray stats, centered hero/Kanji, centered sections, enhanced navbar. Run `npm run dev` to preview.
+**Progress:** Starting Step 1: Restructure index.md to "Was ist Aikido (Philosophie)", "Für wen ist Aikido?" using content from training.md.
+
 
