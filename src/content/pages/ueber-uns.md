@@ -3,17 +3,49 @@ title: Über uns
 order: 4
 ---
 
-# Über uns
+<section class="content-block-spacious">
+  <h1>Über uns</h1>
+  <p class="lead-text">Der Verein wurde am 10.2.2026 gegründet.</p>
+  <p>Unsere Ausrichtung ist von der Arbeit und dem Austausch mit Edmund Kern und Daniel Toutain geprägt.</p>
+</section>
 
-Unser Aikido-Dojo in Braunau existiert seit 1995.  
-Wir glauben an die Prinzipien der Harmonie, Respekt und kontinuierlichen Verbesserung.
+<section class="schedule-section">
+  <h2>Trainingszeiten</h2>
+  <div class="training-schedule">
+    <ul>
+      <li><span class="day">Montag</span> <span class="time">18:00 - 19:30</span> <span class="level">Training</span></li>
+      <li><span class="day">Freitag</span> <span class="time">16:00 - 17:00</span> <span class="level">Fragen und Vertiefung</span></li>
+      <li><span class="day">Freitag</span> <span class="time">17:00 - 18:30</span> <span class="level">Training</span></li>
+      <li><span class="day">Samstag</span> <span class="time">10:00 - 12:00</span> <span class="level">Waffentraining in ungeraden Wochen</span></li>
+    </ul>
+  </div>
+</section>
 
-## Unsere Lehrer
+<section class="content-block-spacious">
+  <h2>Trainingsort</h2>
+  <p>Mehrzweckhalle der neuen Mittelschule<br />Athaler Straße 1<br />5122 Duttendorf</p>
+</section>
 
-- Sensei Max Mustermann – 6. Dan  
-- Sensei Erika Musterfrau – 4. Dan
+<section class="content-block-spacious">
+  <h2>Lehrer</h2>
+  <div class="feature-grid">
+    <div class="feature-card">
+      <h3>Christian Dostal</h3>
+      <p><strong>3. Dan Wanomichi Takemusu Aiki</strong></p>
+      <p>Christian hat seine Aikido-Laufbahn 2004 in Steyr begonnen. Weitere Informationen folgen.</p>
+      <p><em>Foto folgt.</em></p>
+    </div>
+  </div>
+</section>
 
-## Philosophie
+<section class="content-block-spacious">
+  <h2>Etikette</h2>
+  <p><em>Folgt noch.</em></p>
+</section>
 
-Aikido ist nicht nur Sport, sondern eine Lebenseinstellung.  
-Wir legen Wert auf Technik, Achtsamkeit und Gemeinschaft.
+<section class="content-block-spacious">
+  <h2>Probetraining</h2>
+  <p>Ein Probetraining ist zu den Trainingszeiten am Montag und Freitag möglich.</p>
+  <p>Bitte davor auf jeden Fall Kontakt aufnehmen, damit wir Bescheid wissen.</p>
+  <p>Zum Probetraining bitte lange Sportbekleidung oder einen Trainingsanzug sowie Hausschuhe mitbringen. Trainiert wird barfuß oder in rutschfesten Socken.</p>
+</section>

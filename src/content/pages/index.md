@@ -1,15 +1,15 @@
 ---
-title: Aikido – Der Weg der Harmonie
+title: Wanomichi Takemusu Aikido Hochburg-Ach
 order: 1
 ---
 
 <section class="hero hero-home">
   <div class="hero-content">
-    <h1>Willkommen im Aikido Dojo</h1>
-    <p>Balance & Harmonie in Bewegung</p>
+    <h1>Wanomichi Takemusu Aikido Hochburg-Ach</h1>
+    <p>Traditionelles Aikido in Duttendorf - offen für Anfänger:innen und Fortgeschrittene.</p>
     <div class="hero-cta-group">
-      <a href="/aikido/kontakt" class="button button-primary">Kontakt aufnehmen</a>
-      <a href="/aikido/training" class="button button-secondary">Mehr erfahren</a>
+      <a href="/aikido/ueber-uns" class="button button-primary">Über uns</a>
+      <a href="/aikido/kontakt" class="button button-secondary">Kontakt</a>
     </div>
   </div>
   <div class="hero-decoration">
@@ -17,169 +17,60 @@ order: 1
   </div>
 </section>
 
-<!-- Big Facts Section -->
-<section class="big-facts">
-  <div class="facts-container">
-    <h2 class="facts-title">Unser Dojo in Zahlen</h2>
-    <div class="facts-grid">
-      <div class="fact-item">
-        <span class="fact-number" data-count="45">0</span>
-        <span class="fact-label">Aktive Mitglieder</span>
-      </div>
-      <div class="fact-item">
-        <span class="fact-number" data-count="15">0</span>
-        <span class="fact-label">Jahre Tradition</span>
-      </div>
-      <div class="fact-item">
-        <span class="fact-number" data-count="4">0</span>
-        <span class="fact-label">Trainings pro Woche</span>
-      </div>
-      <div class="fact-item">
-        <span class="fact-number" data-count="120">0</span>
-        <span class="fact-label">Bestandene Prüfungen</span>
-      </div>
-    </div>
-  </div>
+<section class="content-block-spacious">
+  <h2>Woher kommt Aikido?</h2>
+  <p class="lead-text">Aikido ist eine japanische Kampfkunst, die von O'Sensei Ueshiba Morihei (1883-1969) um 1920 entwickelt wurde und die er bis zu seinem Tod 1969 stetig weiterentwickelt hat.</p>
+  <p>O'Sensei hat in seinem Leben unterschiedliche Kampfschulen gemeistert. Unter anderem Sumo, Jujutsu (Yagyu-ryu und Daito-ryu), Kenjutsu, Judo, Bajonett- und Speerkampf. Die Körpertechniken des Aikido basieren hauptsächlich auf den Formen des Yagyu-ryu und Daito-ryu Jujutsu, in denen O'Sensei ein Diplom erhielt.</p>
+  <p>Im Laufe der Zeit änderte O'Sensei die Form von der geradlinigen hin zur kreisförmigen Aufnahme der Angriffe und ergänzte die Techniken um Aspekte des Kotodama. So wurden die Wurzeln des Aikido geboren, die um 1922 unter dem Namen Aiki-Bujutsu bekannt wurden.</p>
+  <p>Ein klassisches Prinzip aus dem Jujutsu, dass das Weiche das Harte besiegt, wurde durch O'Sensei in einer abgewandelten Form ins Aikido übernommen. Dabei wurde aus "Wenn du geschoben wirst, ziehe zurück; wenn du gezogen wirst, schiebe vorwärts" das um die Kreisbewegung ergänzte "Wenn du geschoben wirst, drehe dich und weiche aus; wenn du gezogen wirst, trete kreisförmig ein".</p>
+  <p>Die Idee der kreisförmigen Bewegungen ermöglicht es, körperlich überlegene Gegner zu kontrollieren. Wie bei einer Kugel ist das Zentrum stabil und die Bewegung entsteht aus dem Ruhepunkt. Diese kreisförmige Bewegung kann jede Gegenkraft durch Techniken aus ihrem Zentrum heraus umlenken und damit neutralisieren.</p>
+  <p>Nach Jahren intensiven Trainings und einigen persönlichen Erfahrungen änderte O'Sensei den Namen Aiki-Bujutsu im Jahr 1925 auf Aiki-Budo. Um 1942 beschloss er, sein System Aikido - den Weg der Harmonie und Liebe - zu nennen.</p>
+  <p>Mit zunehmendem Alter verschob sich der Fokus von O'Sensei weg von Wildheit und Kraft hin zur liebenden Natur des Aikido. Die Bedeutung von Harmonie und Liebe wurde für ihn immer stärker zum Kern dieser Kunst.</p>
 </section>
-
-<div class="content-block-zen">
-  <div class="brush-text fade-in" style="--delay:0.2s">
-    合気道 – Der Weg der Harmonie
-  </div>
-  
-  <blockquote class="zen-quote fade-in" style="--delay:0.4s">
-    <p>"Der Weg, mit der Energie des Anderen in Einklang zu kommen"</p>
-    <cite>— Morihei Ueshiba, Gründer des Aikido</cite>
-  </blockquote>
-</div>
 
 <section class="content-block-spacious">
-  <h2>Aikido in unserem Dojo</h2>
-  <p class="lead-text">Aikido ist eine <strong>japanische Kampfkunst</strong>, die nicht auf Wettbewerb basiert. Im Mittelpunkt stehen <strong>Achtsamkeit</strong>, <strong>Körperwahrnehmung</strong> und <strong>respektvoller Umgang</strong> miteinander.</p>
-  <p>Wir üben Aikido als <strong>Weg</strong> – nicht als bloße Technik-Sammlung. Es geht um die Entwicklung der eigenen Persönlichkeit durch kontinuierliches Training.</p>
-</section>
-
-<section class="features-section">
-  <h2>Was uns ausmacht</h2>
-  
-  <div class="feature-grid">
-  
-  <div class="feature-card">
-  <div class="feature-icon">🧘</div>
-  <h3>Ruhiges Training</h3>
-  <p>Konzentrierte Übungen in entspannter Atmosphäre ohne Leistungsdruck</p>
-  </div>
-  
-  <div class="feature-card">
-  <div class="feature-icon">🤝</div>
-  <h3>Für alle Levels</h3>
-  <p>Offen für Anfänger:innen und Fortgeschrittene gleichermaßen</p>
-  </div>
-  
-  <div class="feature-card">
-  <div class="feature-icon">🌸</div>
-  <h3>Tradition & Moderne</h3>
-  <p>Authentische Wurzeln mit zeitgemäßer Vermittlungsweise</p>
-  </div>
-  
-  <div class="feature-card">
-  <div class="feature-icon">⚖️</div>
-  <h3>Kein Wettkampf</h3>
-  <p>Gemeinsames Lernen steht im Vordergrund, nicht der Vergleich</p>
-  </div>
-  
-  </div>
-</section>
-
-<section class="schedule-section">
-  <h2>Trainingszeiten</h2>
-  
-  <div class="training-schedule">
-  
-  <ul>
-  <li><span class="day">Montag</span> <span class="time">18:30 – 20:00 Uhr</span> <span class="level">Alle Stufen</span></li>
-  <li><span class="day">Mittwoch</span> <span class="time">19:00 – 20:30 Uhr</span> <span class="level">Alle Stufen</span></li>
-  <li><span class="day">Freitag</span> <span class="time">18:00 – 19:30 Uhr</span> <span class="level">Fortgeschritten</span></li>
-  </ul>
-  
-  </div>
-  
-  <p class="schedule-note">✦ Ein <strong>kostenloses Probetraining</strong> ist jederzeit möglich – komm einfach vorbei!</p>
+  <h2>Was ist Aikido?</h2>
+  <p class="lead-text">Dies ist eine sehr schwierige Frage, die auch erfahrene Aikidoka nicht so ohne weiteres beantworten können.</p>
+  <p>Aikido ist eine japanische Kampfkunst, deren Körpertechniken auf den Schulen des Yagyu-ryu und Daito-ryu Jujutsu basieren, wobei der Tötungsgedanke herausgenommen wurde. Angriffe werden durch Kreisbewegungen umgelenkt, anstatt sich ihnen direkt entgegenzustellen und auf Konfrontation zu gehen.</p>
+  <p>Zum Körpertechnik-Programm (Taijutsu) gehören auch viele Verhebelungen. Dadurch können auch körperlich überlegene Gegner kontrolliert werden. Ziel ist es, dass weder dem Angreifer (uke, der Gebende) noch dem Angegriffenen (nage, der Empfangende) Schaden entsteht.</p>
+  <p>Abgerundet wird das Training, das der Lehre von Saito Morihiro Sensei folgt, durch das Waffentraining (Buki Waza). Im Aikiken, Aikijo und Tanto-Training lernt man nicht nur den Umgang mit den Waffen, sondern auch den eigenen Körper besser kennen.</p>
 </section>
 
 <section class="suitability-section">
-  <h2>Für wen ist Aikido geeignet?</h2>
-  <p class="lead-text">Aikido ist für <strong>Menschen jeden Alters</strong> geeignet. Du brauchst keine Vorkenntnisse, nur Neugier und Offenheit.</p>
-  
+  <h2>Für wen ist Aikido?</h2>
+  <p class="lead-text">Aikido ist für Menschen jeden Alters geeignet. Du brauchst keine Vorkenntnisse, nur Neugier und Offenheit.</p>
+
   <div class="suitability-grid">
     <div class="suitability-item">
       <span class="suitability-icon">🏃</span>
-      <h3>Bewegung ohne Konkurrenz</h3>
-      <p>Menschen, die Bewegung ohne Leistungsdruck suchen</p>
+      <h3>Bewegung ohne Druck</h3>
+      <p>Ideal für alle, die harmonische Bewegung ohne Konkurrenz suchen.</p>
     </div>
     <div class="suitability-item">
       <span class="suitability-icon">🧠</span>
-      <h3>Stress-Ausgleich</h3>
-      <p>Wertvoller Ausgleich zum stressigen Alltag</p>
+      <h3>Stressabbau</h3>
+      <p>Ein ruhiger und konzentrierter Ausgleich zum hektischen Alltag.</p>
     </div>
     <div class="suitability-item">
-      <span class="suitability-icon">🎯</span>
-      <h3>Haltung & Balance</h3>
-      <p>Schulung von Körperhaltung und Balance</p>
+      <span class="suitability-icon">⚖️</span>
+      <h3>Balance und Haltung</h3>
+      <p>Fördert Körperbewusstsein, Stabilität und eine aufrechte Haltung.</p>
     </div>
     <div class="suitability-item">
       <span class="suitability-icon">🌏</span>
-      <h3>Asiatische Kultur</h3>
-      <p>Interessierte an japanischer Philosophie und Kultur</p>
+      <h3>Japanische Kultur</h3>
+      <p>Spannend für Menschen mit Interesse an japanischer Philosophie und Tradition.</p>
     </div>
   </div>
 </section>
 
 <section class="cta-section">
   <div class="cta-box">
-    <h2>Interesse geweckt?</h2>
-    <p> Komm vorbei und schau dir ein Training an – oder nimm unverbindlich Kontakt mit uns auf. Wir freuen uns auf dich!</p>
+    <h2>Neugierig geworden?</h2>
+    <p>Ein Probetraining ist zu den Trainingszeiten am Montag und Freitag möglich. Bitte nimm davor kurz Kontakt mit uns auf.</p>
     <div class="cta-buttons">
-      <a href="/aikido/kontakt" class="button button-primary">Jetzt Kontakt aufnehmen</a>
-      <a href="/aikido/training" class="button button-outline">Mehr zum Training</a>
+      <a href="/aikido/ueber-uns" class="button button-primary">Trainingszeiten</a>
+      <a href="/aikido/kontakt" class="button button-outline">Kontakt</a>
     </div>
   </div>
 </section>
-
-<!-- Counter Animation Script -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const counters = document.querySelectorAll('.fact-number');
-    
-    const animateCounter = (el) => {
-      const target = parseInt(el.getAttribute('data-count'));
-      const duration = 2000;
-      const step = target / (duration / 16);
-      let current = 0;
-      
-      const update = () => {
-        current += step;
-        if (current < target) {
-          el.textContent = Math.floor(current);
-          requestAnimationFrame(update);
-        } else {
-          el.textContent = target + '+';
-        }
-      };
-      
-      update();
-    };
-    
-    // Intersection Observer for triggering animation
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCounter(entry.target);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-    
-    counters.forEach(counter => observer.observe(counter));
-  });
-</script>

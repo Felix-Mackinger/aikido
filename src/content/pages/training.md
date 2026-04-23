@@ -3,71 +3,39 @@ title: Training
 order: 3
 ---
 
-# Training
+<section class="content-block-spacious">
+  <h1>Training</h1>
+  <p class="lead-text">Unser Training folgt der Lehre von Saito Morihiro Sensei und verbindet Körperarbeit, Achtsamkeit und Waffentraining.</p>
+</section>
 
-Aikido ist eine japanische Kampfkunst, die Harmonie und Bewegung in den Mittelpunkt stellt.
+<section class="content-block-spacious">
+  <h2>Was ist Aikido?</h2>
+  <p>Dies ist eine sehr schwierige Frage, die auch erfahrene Aikidoka nicht so ohne weiteres beantworten können.</p>
+  <p>Aikido ist eine japanische Kampfkunst, deren Körpertechniken auf den Schulen des Yagyu-ryu und Daito-ryu Jujutsu basieren, wobei der Tötungsgedanke herausgenommen wurde. Angriffe werden durch Kreisbewegungen umgelenkt, anstatt sich ihnen direkt entgegenzustellen.</p>
+  <p>Zum Taijutsu gehören auch viele Verhebelungen. Ziel ist es, dass weder dem Angreifer (uke) noch dem Angegriffenen (nage) Schaden entsteht.</p>
+</section>
 
----
+<section class="content-block-spacious">
+  <h2>Waffentraining</h2>
+  <p>Abgerundet wird das Training durch Buki Waza. Im Aikiken mit dem Holzschwert, im Aikijo mit dem Holzstab und im Tanto-Training mit dem Holzmesser lernt man seinen Körper noch genauer kennen.</p>
+</section>
 
-## Was ist Aikido?
+<section class="schedule-section">
+  <h2>Trainingszeiten</h2>
+  <div class="training-schedule">
+    <ul>
+      <li><span class="day">Montag</span> <span class="time">18:00 - 19:30</span> <span class="level">Training</span></li>
+      <li><span class="day">Freitag</span> <span class="time">16:00 - 17:00</span> <span class="level">Fragen und Vertiefung</span></li>
+      <li><span class="day">Freitag</span> <span class="time">17:00 - 18:30</span> <span class="level">Training</span></li>
+      <li><span class="day">Samstag</span> <span class="time">10:00 - 12:00</span> <span class="level">Waffentraining in ungeraden Wochen</span></li>
+    </ul>
+  </div>
+</section>
 
-Aikido ist mehr als nur eine Selbstverteidigung – es ist ein **Weg zur persönlichen Entwicklung**. Die Philosophie basiert auf:
-- **Harmonie** mit sich selbst und anderen
-- **Fließende Bewegungen** statt starrer Kraft
-- **Achtsamkeit** im täglichen Training
-
----
-
-## Trainingszeiten
-
-<div class="training-schedule">
-
-<ul>
-<li><span class="day">Montag</span> <span class="time">18:30 – 20:00 Uhr</span> <span class="level">Alle Stufen</span></li>
-<li><span class="day">Mittwoch</span> <span class="time">19:00 – 20:30 Uhr</span> <span class="level">Alle Stufen</span></li>
-<li><span class="day">Freitag</span> <span class="time">18:00 – 19:30 Uhr</span> <span class="level">Fortgeschrittene</span></li>
-</ul>
-
-</div>
-
----
-
-## Für wen ist Aikido geeignet?
-
-Aikido ist für **Menschen jeden Alters** geeignet:
-
-- Keine Vorkenntnisse nötig
-- Kein Wettbewerb – jeder übt nach eigenem Tempo
-- Fördert Körperhaltung, Balance und Konzentration
-- Ideal als Ausgleich zum Alltag
-
----
-
-## Einstieg
-
-<div class="feature-grid">
-
-<div class="feature-card">
-<h3>📚 Kostenloses Probetraining</h3>
-<p>Jederzeit möglich – einfach vorbeikommen!</p>
-</div>
-
-<div class="feature-card">
-<h3>👕 Kleidung</h3>
-<p>Sportsachen oder Kimono – beides ist willkommen</p>
-</div>
-
-<div class="feature-card">
-<h3>⏰ Pünktlichkeit</h3>
-<p>15 Minuten früher kommen für Umkleide</p>
-</div>
-
-</div>
-
----
-
-## Kontakt für Fragen
-
-Bei Fragen zum Training kannst du uns gerne kontaktieren:
-
-<a href="/aikido/kontakt" class="button">Kontakt aufnehmen</a>
+<section class="content-block-spacious">
+  <h2>Probetraining</h2>
+  <p>Ein Probetraining ist zu den Trainingszeiten am Montag und Freitag möglich.</p>
+  <p>Bitte nimm davor auf jeden Fall Kontakt mit uns auf, damit wir Bescheid wissen.</p>
+  <p>Zum Probetraining bitte lange Sportbekleidung oder einen Trainingsanzug sowie Hausschuhe anziehen. Trainiert wird barfuß oder in rutschfesten Socken.</p>
+  <p><a href="/aikido/kontakt" class="button">Kontakt aufnehmen</a></p>
+</section>

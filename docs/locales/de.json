@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "about": "Über uns",
+    "training": "Training",
+    "schedule": "Trainingsplan",
+    "events": "Termine",
+    "news": "News",
+    "gallery": "Galerie",
+    "appointment": "Termin",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Willkommen im Aikido Dojo",
+    "subtitle": "Balance & Harmonie in Bewegung",
+    "cta": "Probetraining vereinbaren"
+  },
+  "home": {
+    "philosophy": "合気道 – Der Weg der Harmonie",
+    "quote": "Der Weg, mit der Energie des Anderen in Einklang zu kommen",
+    "aboutTitle": "Aikido in unserem Dojo",
+    "aboutText": "Aikido ist eine japanische Kampfkunst, die nicht auf Wettbewerb basiert. Im Mittelpunkt stehen Achtsamkeit, Körperwahrnehmung und respektvoller Umgang miteinander.",
+    "features": {
+      "calm": {
+        "title": "Ruhiges Training",
+        "desc": "Konzentrierte Übungen in entspannter Atmosphäre ohne Leistungsdruck"
+      },
+      "levels": {
+        "title": "Für alle Levels",
+        "desc": "Offen für Anfänger:innen und Fortgeschrittene gleichermaßen"
+      },
+      "tradition": {
+        "title": "Tradition & Moderne",
+        "desc": "Authentische Wurzeln mit zeitgemäßer Vermittlungsweise"
+      },
+      "competition": {
+        "title": "Kein Wettkampf",
+        "desc": "Gemeinsames Lernen steht im Vordergrund, nicht der Vergleich"
+      }
+    },
+    "schedule": "Trainingszeiten",
+    "scheduleNote": "Ein kostenloses Probetraining ist jederzeit möglich – komm einfach vorbei!",
+    "suitability": {
+      "title": "Für wen ist Aikido geeignet?",
+      "intro": "Aikido ist für Menschen jeden Alters geeignet. Du brauchst keine Vorkenntnisse, nur Neugier und Offenheit.",
+      "bullet1": "Menschen, die Bewegung ohne Konkurrenz suchen",
+      "bullet2": "Ausgleich zum stressigen Alltag",
+      "bullet3": "Schulung von Haltung, Balance und Körperpräsenz",
+      "bullet4": "Interessierte an asiatischen Kampfkünsten"
+    },
+    "cta": {
+      "title": "Interesse geweckt?",
+      "text": "Komm vorbei und schau dir ein Training an – oder nimm unverbindlich Kontakt mit uns auf.",
+      "button": "Jetzt Kontakt aufnehmen →"
+    },
+    "facts": {
+      "title": "Unser Dojo in Zahlen",
+      "members": "Aktive Mitglieder",
+      "years": "Jahre Tradition",
+      "weekly": "Trainings pro Woche",
+      "exams": "Bestandene Prüfungen"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse",
+    "hours": "Öffnungszeiten",
+    "form": {
+      "title": "Kontaktformular",
+      "subtitle": "Schreib uns direkt – wir melden uns so schnell wie möglich zurück!",
+      "name": "Name",
+      "namePlaceholder": "Dein Name",
+      "email": "E-Mail",
+      "emailPlaceholder": "deine@email.at",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Worum geht es?",
+      "message": "Nachricht",
+      "messagePlaceholder": "Deine Nachricht an uns...",
+      "submit": "Nachricht senden"
+    },
+    "location": "Wo du uns findest",
+    "lookingForward": "Wir freuen uns auf dich! 🙏"
+  },
+  "impressum": {
+    "title": "Impressum",
+    "info": "Angaben gemäß §5 ECG",
+    "association": "Aikido Verein",
+    "address": "Adresse",
+    "contact": "Kontakt",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "director": "Obmann",
+    "registration": "Vereinsregister",
+    "disclaimer": "Haftungsausschluss",
+    "content": "Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen.",
+    "maps": "So findest du uns"
+  },
+  "footer": {
+    "about": "Über das Dojo",
+    "contact": "Kontakt",
+    "times": "Trainingszeiten",
+    "legal": "Rechtliches",
+    "copyright": "© {year} Aikido Dojo Braunau",
+    "tagline": "Die Kunst der Harmonie"
+  },
+  "training": {
+    "title": "Training",
+    "whatIs": "Was ist Aikido?",
+    "philosophy": "Philosophie",
+    "beginners": "Für Anfänger",
+    "equipment": "Ausrüstung"
+  },
+  "gallery": {
+    "title": "Foto-Galerie",
+    "intro": "Hier ein paar Eindrücke aus unserem Dojo:",
+    "comingSoon": "Fotos werden demnächst hinzugefügt."
+  },
+  "news": {
+    "title": "Neuigkeiten & Termine",
+    "readMore": "Mehr lesen"
+  },
+  "common": {
+    "learnMore": "Mehr erfahren",
+    "back": "Zurück",
+    "next": "Weiter",
+    "download": "Herunterladen",
+    "materials": "Materialien"
+  }
+}
+
