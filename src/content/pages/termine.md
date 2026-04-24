@@ -3,13 +3,13 @@ title: Termine
 order: 7
 ---
 
-<section class="content-block-spacious">
+<section class="content-block-spacious" data-i18n-html="pages.events.intro">
   <h1>Termine</h1>
   <p class="lead-text">Derzeit finden alle Trainings statt.</p>
-  <p>Unsere laufende Timeline mit aktuellen und vergangenen Einträgen findest du auf der Seite <a href="/aikido/news">Aktuelles</a>. Dort beginnen die sichtbaren Termine beim heutigen Tag, während ältere Einträge automatisch ins Archiv wandern.</p>
+  <p>Unsere laufende Timeline mit aktuellen und vergangenen Einträgen findest du auf der Seite <a href="/news">Aktuelles</a>. Dort beginnen die sichtbaren Termine beim heutigen Tag, während ältere Einträge automatisch ins Archiv wandern.</p>
 </section>
 
-<section class="horizontal-timeline-section">
+<section class="horizontal-timeline-section" data-i18n-html="pages.events.upcoming">
   <h2>Kommende Termine</h2>
   <div class="horizontal-timeline future-events">
     <div class="timeline-event">
@@ -27,8 +27,8 @@ order: 7
   </div>
 </section>
 
-<section class="content-block-spacious">
+<section class="content-block-spacious" data-i18n-html="pages.events.archive">
   <h2>Vergangene Termine und Galerie</h2>
   <p>Vergangene Termine, Ausschreibungen und künftig auch Bilder sammeln wir im Archiv und in der Galerie.</p>
-  <p><a href="/aikido/foto-galerie" class="button">Zur Galerie</a></p>
+  <p><a href="/foto-galerie" class="button">Zur Galerie</a></p>
 </section>

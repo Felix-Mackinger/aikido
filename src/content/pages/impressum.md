@@ -3,7 +3,7 @@ title: Impressum & Kontakt
 order: 99
 ---
 
-<div class="legal-container">
+<div class="legal-container" data-i18n-html="pages.legal.content">
 
 <h1>Impressum & Kontakt</h1>
 

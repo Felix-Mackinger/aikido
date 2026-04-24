@@ -29,6 +29,22 @@
         "order": {
           "type": "number"
         },
+        "display": {
+          "type": "string",
+          "enum": [
+            "modal",
+            "page"
+          ],
+          "default": "modal"
+        },
+        "modalSize": {
+          "type": "string",
+          "enum": [
+            "default",
+            "wide"
+          ],
+          "default": "default"
+        },
         "$schema": {
           "type": "string"
         }

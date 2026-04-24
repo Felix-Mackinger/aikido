@@ -9,7 +9,7 @@ export async function getStaticPaths() {
   const entries = await getCollection('news');
 
   return entries.map((entry) => ({
-    params: { id: entry.id },
+    params: { slug: entry.slug },
     props: { entry },
   }));
 }
@@ -25,6 +25,7 @@ export async function GET({ props }: { props: NewsEntryProps }) {
       title: entry.data.title,
       date: entry.data.date,
       content,
+      modalSize: entry.data.modalSize,
     }),
     {
       headers: {

@@ -3,13 +3,13 @@ title: Über uns
 order: 4
 ---
 
-<section class="content-block-spacious">
+<section class="content-block-spacious" data-i18n-html="pages.about.intro">
   <h1>Über uns</h1>
   <p class="lead-text">Der Verein wurde am 10.2.2026 gegründet.</p>
   <p>Unsere Ausrichtung ist von der Arbeit und dem Austausch mit Edmund Kern und Daniel Toutain geprägt.</p>
 </section>
 
-<section class="schedule-section">
+<section class="schedule-section" data-i18n-html="pages.about.times">
   <h2>Trainingszeiten</h2>
   <div class="training-schedule">
     <ul>
@@ -21,12 +21,12 @@ order: 4
   </div>
 </section>
 
-<section class="content-block-spacious">
+<section class="content-block-spacious" data-i18n-html="pages.about.location">
   <h2>Trainingsort</h2>
   <p>Mehrzweckhalle der neuen Mittelschule<br />Athaler Straße 1<br />5122 Duttendorf</p>
 </section>
 
-<section class="content-block-spacious">
+<section class="content-block-spacious" data-i18n-html="pages.about.teacher">
   <h2>Lehrer</h2>
   <div class="feature-grid">
     <div class="feature-card">
@@ -38,12 +38,12 @@ order: 4
   </div>
 </section>
 
-<section class="content-block-spacious">
+<section class="content-block-spacious" data-i18n-html="pages.about.etiquette">
   <h2>Etikette</h2>
   <p><em>Folgt noch.</em></p>
 </section>
 
-<section class="content-block-spacious">
+<section class="content-block-spacious" data-i18n-html="pages.about.trial">
   <h2>Probetraining</h2>
   <p>Ein Probetraining ist zu den Trainingszeiten am Montag und Freitag möglich.</p>
   <p>Bitte davor auf jeden Fall Kontakt aufnehmen, damit wir Bescheid wissen.</p>

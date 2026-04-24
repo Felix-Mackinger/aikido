@@ -11,7 +11,7 @@ Hier ein paar Eindrücke aus unserem Dojo:
 
 <!-- 
 Bilder können hier eingefügt werden:
-![Training](/aikido/images/training1.jpg)
-![Dojo](/aikido/images/dojo1.jpg)
-![Meisterklasse](/aikido/images/meisterklasse.jpg)
+![Training](/images/training1.jpg)
+![Dojo](/images/dojo1.jpg)
+![Meisterklasse](/images/meisterklasse.jpg)
 -->

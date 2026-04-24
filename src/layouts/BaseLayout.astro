@@ -9,8 +9,14 @@ interface Props {
   content?: string;
 }
 
-const { title, description = "Aikido Dojo - Der Weg der Harmonie. Traditionelle japanische Kampfkunst für alle Altersgruppen.", content } = Astro.props;
+const {
+  title,
+  description = 'Aikido Dojo - Der Weg der Harmonie. Traditionelle japanische Kampfkunst fuer alle Altersgruppen.',
+  content,
+} = Astro.props;
+
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const baseUrl = import.meta.env.BASE_URL || '/';
 ---
 
 <html lang="de">
@@ -18,35 +24,43 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content={description} />
+  <meta name="color-scheme" content="light dark" />
   <meta name="keywords" content="Aikido, Dojo, Kampfkunst, Japan, Meditation, Selbstverteidigung, Braunau, Training" />
   <meta name="author" content="Aikido Dojo" />
-  
-  <!-- Open Graph / Social Media -->
+
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalURL} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:locale" content="de_DE" />
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="/aikido/favicon.svg" />
-  
+
+  <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
+
   <title>{title}</title>
   <link rel="canonical" href={canonicalURL} />
-  
-  <link rel="stylesheet" href="/aikido/styles/colors.css" />
-  <link rel="stylesheet" href="/aikido/styles/base.css" />
-  <link rel="stylesheet" href="/aikido/styles/components.css" />
-  <link rel="stylesheet" href="/aikido/styles/navigation.css" />
-  <link rel="stylesheet" href="/aikido/styles/legal.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Noto+Serif+JP:wght@400;600&family=Yuji+Syuku&display=swap" rel="stylesheet">
-  
-  <!-- i18n Script -->
-  <script is:inline src="/aikido/scripts/i18n.js"></script>
+  <script is:inline define:vars={{ baseUrl }}>
+    window.__SITE_BASE__ = baseUrl;
+    try {
+      const storedTheme = localStorage.getItem('theme');
+      const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = storedTheme || preferredTheme;
+    } catch {
+      document.documentElement.dataset.theme = 'light';
+    }
+  </script>
 
+  <link rel="stylesheet" href={`${baseUrl}styles/colors.css`} />
+  <link rel="stylesheet" href={`${baseUrl}styles/base.css`} />
+  <link rel="stylesheet" href={`${baseUrl}styles/components.css`} />
+  <link rel="stylesheet" href={`${baseUrl}styles/navigation.css`} />
+  <link rel="stylesheet" href={`${baseUrl}styles/legal.css`} />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@500;600;700&family=Yuji+Syuku&display=swap" rel="stylesheet" />
+
+  <script is:inline src={`${baseUrl}scripts/i18n.js`}></script>
 </head>
 
 <body>
