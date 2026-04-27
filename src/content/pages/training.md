@@ -32,10 +32,3 @@ order: 3
   </div>
 </section>
 
-<section class="content-block-spacious" data-i18n-html="pages.training.trial">
-  <h2>Probetraining</h2>
-  <p>Ein Probetraining ist zu den Trainingszeiten am Montag und Freitag möglich.</p>
-  <p>Bitte nimm davor auf jeden Fall Kontakt mit uns auf, damit wir Bescheid wissen.</p>
-  <p>Zum Probetraining bitte lange Sportbekleidung oder einen Trainingsanzug sowie Hausschuhe anziehen. Trainiert wird barfuß oder in rutschfesten Socken.</p>
-  <p><a href="/kontakt" class="button">Kontakt aufnehmen</a></p>
-</section>

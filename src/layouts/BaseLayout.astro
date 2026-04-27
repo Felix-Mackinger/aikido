@@ -66,6 +66,10 @@ const baseUrl = import.meta.env.BASE_URL || '/';
 <body>
   <div class="site-wrapper">
     <Navigation />
+    
+    <div class="logo-watermark">
+      <img src={`${baseUrl}favicon.svg`} alt="Aikido Logo" />
+    </div>
 
     <main class="content">
       {content ? <div set:html={content} /> : <slot />}

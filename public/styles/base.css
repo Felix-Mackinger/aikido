@@ -24,6 +24,23 @@ img {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.logo-watermark {
+  position: fixed;
+  left: 1.5rem;
+  top: calc(4.5rem + 1rem);
+  width: 100px;
+  height: 100px;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.logo-watermark img {
+  width: 100%;
+  height: 100%;
 }
 
 .content {
@@ -192,9 +209,12 @@ img {
 
 .hero-kanji {
   font-family: var(--font-brush);
-  font-size: clamp(7rem, 16vw, 12rem);
+  font-size: clamp(4rem, 8vw, 6rem);
   color: rgba(255, 248, 232, 0.18);
-  line-height: 1;
+  line-height: 1.1;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  letter-spacing: 1rem;
 }
 
 .button {
