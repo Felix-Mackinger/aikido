@@ -3,7 +3,7 @@ title: Impressum & Kontakt
 order: 99
 ---
 
-<div class="legal-container" data-i18n-html="pages.legal.content">
+<div class="legal-container">
 
 <h1>Impressum & Kontakt</h1>
 
@@ -23,7 +23,7 @@ order: 99
 ## Haftungshinweis
 
 <div class="legal-section">
-  <p>Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.</p>
+  <p>Trotz sorgfaeltiger inhaltlicher Kontrolle uebernehmen wir keine Haftung fuer die Inhalte externer Links. Fuer den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich.</p>
 </div>
 
 ## Datenschutz
@@ -36,15 +36,24 @@ order: 99
 
 <div class="legal-section">
   <p><strong>Obmann:</strong> Christian Dostal<br />
+  Birkenweg 29<br />
+  5122 Hochburg-Ach<br />
+  Oesterreich<br />
   <strong>Telefonnummer:</strong> <a href="tel:+436504600020">+43 650 4600020</a><br />
   <strong>E-Mail:</strong> <a href="mailto:dojo@aikido-hochburg-ach.at">dojo@aikido-hochburg-ach.at</a></p>
 
-  <p><strong>Obmannstellvertreterin:</strong> Karin Sturm<br />
-  <strong>Telefonnummer:</strong> +49 xxx<br />
+  <p><strong>2. Vorstand:</strong> Karin Sturm<br />
+  Sternstrasse 11<br />
+  84577 Tuessling<br />
+  Deutschland<br />
+  <strong>Telefonnummer:</strong> <a href="tel:+4915771977750">+49 157 / 71977750</a><br />
   <strong>E-Mail:</strong> <a href="mailto:dojo@aikido-hochburg-ach.at">dojo@aikido-hochburg-ach.at</a></p>
 
-  <p><strong>Kassierin:</strong> Sandra Šolaja-Pelzer<br />
-  <strong>Telefonnummer:</strong> +49 xxx<br />
+  <p><strong>Kassier:</strong> Sandra Solaja-Pelzer<br />
+  Franziskanerstrasse 2<br />
+  84503 Altoetting<br />
+  Deutschland<br />
+  <strong>Telefonnummer:</strong> <a href="tel:+491631760984">+49 163 / 1760984</a><br />
   <strong>E-Mail:</strong> <a href="mailto:dojo@aikido-hochburg-ach.at">dojo@aikido-hochburg-ach.at</a></p>
 </div>
 
@@ -52,8 +61,8 @@ order: 99
 
 <div class="legal-section">
   <p>Nachricht senden an <a href="mailto:dojo@aikido-hochburg-ach.at">dojo@aikido-hochburg-ach.at</a></p>
-  <p><strong>Instagram:</strong> derzeit noch nicht hinterlegt<br />
-  <strong>Facebook:</strong> derzeit noch nicht hinterlegt</p>
+  <p><strong>Telefon:</strong> <a href="tel:+436504600020">+43 650 4600020</a><br />
+  <strong>Google Maps:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=Athaler%20Strasse%201%2C%205122%20Duttendorf" target="_blank" rel="noopener noreferrer">Trainingsort oeffnen</a></p>
 </div>
 
 ## Links

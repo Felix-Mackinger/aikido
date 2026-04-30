@@ -23,11 +23,35 @@
             }
           ]
         },
+        "endDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
         "preview": {
           "type": "string"
         },
-        "order": {
-          "type": "number"
+        "type": {
+          "type": "string",
+          "enum": [
+            "news",
+            "event"
+          ],
+          "default": "news"
+        },
+        "location": {
+          "type": "string"
         },
         "display": {
           "type": "string",
@@ -35,15 +59,28 @@
             "modal",
             "page"
           ],
-          "default": "modal"
+          "default": "page"
         },
-        "modalSize": {
+        "color": {
           "type": "string",
           "enum": [
-            "default",
-            "wide"
+            "moss",
+            "sage",
+            "gold"
           ],
-          "default": "default"
+          "default": "moss"
+        },
+        "pdfs": {
+          "type": "object",
+          "properties": {
+            "de": {
+              "type": "string"
+            },
+            "en": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
         },
         "$schema": {
           "type": "string"

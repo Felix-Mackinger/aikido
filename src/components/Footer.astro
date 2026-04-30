@@ -1,92 +1,111 @@
 ---
+import {
+  contactData,
+  footerLinks,
+  footerSocialLinks,
+  partnerLinks,
+  trainingSchedule,
+  venue,
+} from '../data/site';
+
 const baseUrl = import.meta.env.BASE_URL || '/';
 const currentYear = new Date().getFullYear();
+const withBase = (path = '') => `${baseUrl}${path}`;
+
+const footerLabelFallbacks = {
+  'nav.about': 'Ueber uns',
+  'nav.training': 'Training',
+  'nav.schedule': 'Trainingsplan',
+  'nav.contact': 'Kontakt',
+  'footer.news_and_events': 'Aktuelles & Termine',
+  'footer.event_overview': 'Terminuebersicht',
+  'nav.gallery': 'Galerie',
+  'footer.legal_and_privacy': 'Impressum & Datenschutz',
+};
 ---
 
 <footer class="footer">
   <div class="footer-content">
     <div class="footer-grid">
-      <div class="footer-section">
-        <h4 data-i18n="footer.dojo_title">WTA Hochburg-Ach</h4>
-        <ul>
-          <li><a href={`${baseUrl}ueber-uns`} data-i18n="nav.about">Über uns</a></li>
-          <li><a href={`${baseUrl}training`} data-i18n="nav.training">Training</a></li>
-          <li><a href={`${baseUrl}trainingsplan`} data-i18n="nav.schedule">Trainingsplan</a></li>
-          <li><a href={`${baseUrl}kontakt`} data-i18n="nav.contact">Kontakt</a></li>
-        </ul>
-      </div>
+      {footerLinks.map((section) => (
+        <div class="footer-section">
+          <h4 data-i18n={section.titleKey}>
+            {section.titleKey === 'footer.dojo_title' ? 'WTA Hochburg-Ach' : 'Aktuelles'}
+          </h4>
 
-      <div class="footer-section">
-        <h4 data-i18n="footer.updates_title">Aktuelles</h4>
-        <ul>
-          <li><a href={`${baseUrl}news`} data-i18n="footer.news_and_events">Aktuelles & Termine</a></li>
-          <li><a href={`${baseUrl}termine`} data-i18n="footer.event_overview">Terminübersicht</a></li>
-          <li><a href={`${baseUrl}foto-galerie`} data-i18n="nav.gallery">Galerie</a></li>
-          <li><a href={`${baseUrl}legal`} data-i18n="footer.legal_and_privacy">Impressum & Datenschutz</a></li>
-        </ul>
-      </div>
+          <ul>
+            {section.items.map((item) => (
+              <li>
+                <a href={withBase(item.href)} data-i18n={item.labelKey}>
+                  {footerLabelFallbacks[item.labelKey]}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
 
       <div class="footer-section">
         <h4 data-i18n="footer.times_title">Trainingszeiten</h4>
         <ul>
-          <li data-i18n="footer.times_monday">Montag: 18:00 - 19:30</li>
-          <li data-i18n="footer.times_friday_questions">Freitag: 16:00 - 17:00 Vertiefung</li>
-          <li data-i18n="footer.times_friday_training">Freitag: 17:00 - 18:30 Training</li>
-          <li data-i18n="footer.times_saturday">Samstag: 10:00 - 12:00 Waffen in ungeraden Wochen</li>
+          {trainingSchedule.map((item, index) => (
+            <li
+              data-i18n={
+                index === 0
+                  ? 'footer.times_monday'
+                  : index === 1
+                    ? 'footer.times_friday_questions'
+                    : index === 2
+                      ? 'footer.times_friday_training'
+                      : 'footer.times_saturday'
+              }
+            >
+              {item.day}: {item.time} {item.label}
+            </li>
+          ))}
         </ul>
       </div>
 
       <div class="footer-section">
         <h4 data-i18n="footer.contact_title">Kontakt</h4>
         <ul>
-          <li><a href="mailto:dojo@aikido-hochburg-ach.at">dojo@aikido-hochburg-ach.at</a></li>
-          <li><a href="tel:+436504600020">+43 650 4600020</a></li>
-          <li data-i18n="footer.address_line1">Athaler Straße 1</li>
-          <li data-i18n="footer.address_line2">5122 Duttendorf</li>
+          <li><a href={`mailto:${contactData.email}`}>{contactData.email}</a></li>
+          <li><a href={contactData.phone.href}>{contactData.phone.compact}</a></li>
+          <li data-i18n="footer.address_line1">{venue.street}</li>
+          <li data-i18n="footer.address_line2">{venue.postalCode} {venue.city}</li>
         </ul>
 
         <div class="footer-social">
-          <a href="mailto:dojo@aikido-hochburg-ach.at" aria-label="E-Mail">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1 .9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
-            </svg>
-          </a>
+          {footerSocialLinks.map((item) => (
+            <a
+              href={item.href}
+              aria-label={item.label}
+              target={item.href.startsWith('http') ? '_blank' : undefined}
+              rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+            >
+              {item.label}
+            </a>
+          ))}
+        </div>
+
+        <div class="footer-network">
+          <p data-i18n="footer.network_title">Netzwerk</p>
+          <ul>
+            {partnerLinks.map((item) => (
+              <li><a href={item.href} target="_blank" rel="noopener noreferrer">{item.label}</a></li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>
   </div>
 
+  <img src={`${baseUrl}assets/brush.svg`} alt="" class="footer-brush" />
+
   <div class="footer-bottom">
     <p data-i18n="footer.copyright" data-i18n-attr="data-year:footer.year" data-year={currentYear}>
       © {currentYear} Wanomichi Takemusu Aikido Hochburg-Ach
     </p>
-    <p class="footer-tagline" data-i18n="footer.tagline">Aikido - der Weg der Harmonie | 合気道</p>
+    <p class="footer-tagline" data-i18n="footer.tagline">Aikido - der Weg der Harmonie</p>
   </div>
 </footer>
-
-<style>
-.footer-social {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.footer-social a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.6rem;
-  height: 2.6rem;
-  border-radius: 50%;
-  background: var(--color-surface);
-  color: var(--color-primary);
-  transition: transform 0.2s ease, background 0.2s ease;
-}
-
-.footer-social a:hover {
-  background: var(--color-button-primary);
-  color: var(--color-button-text);
-  transform: translateY(-2px);
-}
-</style>

@@ -24,8 +24,11 @@ export async function GET({ props }: { props: NewsEntryProps }) {
     JSON.stringify({
       title: entry.data.title,
       date: entry.data.date,
+      endDate: entry.data.endDate,
+      location: entry.data.location,
+      type: entry.data.type,
+      pdfs: entry.data.pdfs,
       content,
-      modalSize: entry.data.modalSize,
     }),
     {
       headers: {

@@ -11,10 +11,18 @@ const news = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
+    endDate: z.coerce.date().optional(),
     preview: z.string().optional(),
-    order: z.number().optional(),
-    display: z.enum(['modal', 'page']).default('modal'),
-    modalSize: z.enum(['default', 'wide']).default('default'),
+    type: z.enum(['news', 'event']).default('news'),
+    location: z.string().optional(),
+    display: z.enum(['modal', 'page']).default('page'),
+    color: z.enum(['moss', 'sage', 'gold']).default('moss'),
+    pdfs: z
+      .object({
+        de: z.string().optional(),
+        en: z.string().optional(),
+      })
+      .optional(),
   }),
 });
 

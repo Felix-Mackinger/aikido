@@ -1,11 +1,14 @@
 ---
 title: Trainingsbetrieb findet statt
 date: 2026-04-23
-preview: Derzeit finden alle Trainings wie geplant statt.
-display: modal
-modalSize: default
+preview: Alle regulaeren Einheiten finden derzeit wie geplant statt.
+type: news
+display: page
+color: sage
 ---
 
-Derzeit finden alle Trainings wie geplant statt.
+Alle regulaeren Einheiten in Duttendorf finden derzeit wie geplant statt.
 
-Wir freuen uns auf regulaere Einheiten am Montag, Freitag und auf das Waffentraining an den ungeraden Samstagen.
+Wir freuen uns auf das Training am Montag, die Einheiten am Freitag und das Waffentraining in den ungeraden Wochen.
+
+Wenn sich an Uhrzeiten oder Orten etwas aendert, aktualisieren wir den Hinweis direkt in der Chronik.

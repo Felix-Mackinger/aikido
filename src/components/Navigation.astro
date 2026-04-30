@@ -1,9 +1,21 @@
 ---
+import { navItems, siteLinks } from '../data/site';
+
 const baseUrl = import.meta.env.BASE_URL || '/';
+const withBase = (path = '') => `${baseUrl}${path}`;
+
+const fallbackLabels = {
+  'nav.about': 'Ueber uns',
+  'nav.training': 'Training',
+  'nav.events': 'Termine',
+  'nav.news': 'Aktuelles',
+  'nav.gallery': 'Galerie',
+  'nav.contact': 'Kontakt',
+};
 ---
 
-<nav class="nav">
-  <div class="nav-top">
+<div class="utility-bar">
+  <div class="utility-inner">
     <button class="theme-btn" id="theme-toggle" type="button" aria-label="Farbschema wechseln">
       <span class="theme-track" aria-hidden="true">
         <span class="theme-thumb">
@@ -24,7 +36,7 @@ const baseUrl = import.meta.env.BASE_URL || '/';
     </button>
 
     <div class="lang-selector">
-      <button class="lang-btn" type="button" aria-label="Sprache ändern">
+      <button class="lang-btn" type="button" aria-label="Sprache aendern" aria-expanded="false">
         <svg class="lang-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <circle cx="12" cy="12" r="9" />
           <path d="M3 12h18" />
@@ -56,78 +68,36 @@ const baseUrl = import.meta.env.BASE_URL || '/';
       </div>
     </div>
   </div>
+</div>
 
+<nav class="nav">
   <div class="nav-inner">
-    <a href={baseUrl} class="logo">Aikido</a>
+    <a href={withBase(siteLinks.home)} class="logo">
+      <span class="logo-kicker">Wanomichi Takemusu</span>
+      <span class="logo-name">Aikido</span>
+      <span class="logo-location">Hochburg-Ach</span>
+    </a>
 
-    <button class="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false">
+    <button class="menu-toggle" type="button" aria-label="Menue oeffnen" aria-expanded="false">
       <span class="hamburger"></span>
     </button>
 
     <ul class="nav-links">
-      <li>
-        <a href={`${baseUrl}ueber-uns`} class="nav-link">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
-          <span data-i18n="nav.about">Über uns</span>
-        </a>
-      </li>
-      <li>
-        <a href={`${baseUrl}training`} class="nav-link">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
-            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
-            <line x1="6" y1="1" x2="6" y2="4" />
-            <line x1="10" y1="1" x2="10" y2="4" />
-            <line x1="14" y1="1" x2="14" y2="4" />
-          </svg>
-          <span data-i18n="nav.training">Training</span>
-        </a>
-      </li>
-      <li>
-        <a href={`${baseUrl}termine`} class="nav-link">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-            <line x1="16" y1="2" x2="16" y2="6" />
-            <line x1="8" y1="2" x2="8" y2="6" />
-            <line x1="3" y1="10" x2="21" y2="10" />
-            <path d="M9 16l2 2 4-4" />
-          </svg>
-          <span data-i18n="nav.events">Termine</span>
-        </a>
-      </li>
-      <li>
-        <a href={`${baseUrl}news`} class="nav-link">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 21h13a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2H7a3 3 0 0 0-3 3v15Z" />
-            <path d="M8 7h8" />
-            <path d="M8 11h8" />
-            <path d="M8 15h5" />
-          </svg>
-          <span data-i18n="nav.news">Aktuelles</span>
-        </a>
-      </li>
-      <li>
-        <a href={`${baseUrl}foto-galerie`} class="nav-link">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-            <circle cx="8.5" cy="8.5" r="1.5" />
-            <path d="m21 15-5-5L5 21" />
-          </svg>
-          <span data-i18n="nav.gallery">Galerie</span>
-        </a>
-      </li>
-      <li>
-        <a href={`${baseUrl}kontakt`} class="nav-link">
-          <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1 .9-2 2-2z" />
-            <polyline points="22 6 12 13 2 6" />
-          </svg>
-          <span data-i18n="nav.contact">Kontakt</span>
-        </a>
-      </li>
+      {navItems.map((item) => (
+        <li class="nav-item">
+          <a href={withBase(item.href)} class="nav-link">
+            <span class="nav-link-label" data-i18n={item.labelKey}>
+              {fallbackLabels[item.labelKey]}
+            </span>
+            <span class="nav-link-hint" data-i18n={item.summaryKey}>
+              {item.summary}
+            </span>
+          </a>
+          <div class="nav-flyout">
+            <p data-i18n={item.summaryKey}>{item.summary}</p>
+          </div>
+        </li>
+      ))}
     </ul>
   </div>
 
@@ -142,9 +112,11 @@ const baseUrl = import.meta.env.BASE_URL || '/';
   const navLinks = document.querySelector('.nav-links');
   const langBtn = document.querySelector('.lang-btn');
   const langDropdown = document.querySelector('.lang-dropdown');
+  const nav = document.querySelector('.nav');
 
   function updateThemeUi(theme) {
     themeToggle?.setAttribute('data-theme', theme);
+
     if (themeLabel) {
       const fallback = theme === 'dark' ? 'Dunkel' : 'Hell';
       themeLabel.textContent = window.i18n?.t(`common.theme_${theme}`, fallback) ?? fallback;
@@ -185,9 +157,17 @@ const baseUrl = import.meta.env.BASE_URL || '/';
   langBtn?.addEventListener('click', (event) => {
     event.stopPropagation();
     langDropdown?.classList.toggle('show');
+    langBtn?.setAttribute('aria-expanded', String(langDropdown?.classList.contains('show')));
   });
 
-  document.addEventListener('click', () => {
+  document.addEventListener('click', (event) => {
     langDropdown?.classList.remove('show');
+    langBtn?.setAttribute('aria-expanded', 'false');
+
+    if (!nav?.contains(event.target)) {
+      navLinks?.classList.remove('open');
+      menuToggle?.classList.remove('open');
+      menuToggle?.setAttribute('aria-expanded', 'false');
+    }
   });
 </script>

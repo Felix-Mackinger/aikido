@@ -1,155 +1,154 @@
 # Anleitung - Aikido Website bearbeiten
 
 ## Inhalt
-1. [Neue News posten](#neue-news-posten)
-2. [Bestehende Seiten bearbeiten](#bestehende-seiten-bearbeiten)
-3. [Deployment](#deployment)
+1. Neue Eintraege fuer Aktuelles und Termine
+2. Wichtige Inhalte bearbeiten
+3. Lokale Befehle
+4. Deployment auf Cloudflare Workers
 
+## Neue Eintraege fuer Aktuelles und Termine
+
+Neue Eintraege liegen in `src/content/news/`.
+
+### Dateiname
+
+Nutze sprechende Dateinamen in Kleinbuchstaben mit Bindestrichen.
+
+- `sommer-lehrgang-2026.md`
+- `trainingsinfo-mai-2026.md`
+
+### Frontmatter
+
+Jeder Eintrag braucht mindestens diese Felder:
+
+```md
 ---
-
-## Neue News posten
-
-### Schritt 1: Neue Datei erstellen
-
-Erstelle eine neue Markdown-Datei im Ordner `src/content/news/`.
-
-**Dateiname:** Verwende kurze, aussagekräftige Namen (Kleinbuchstaben, Bindestriche)
-- ✅ `neue-trainingszeiten.md`
-- ✅ `sommer-lehrgang-2026.md`
-- ❌ `Neue_Trainingszeiten_Info.md`
-
-### Schritt 2: Frontmatter ausfüllen
-
-Jede News-Datei beginnt mit dem Frontmatter (Daten zwischen den `---`):
-
-```
-markdown
+title: Titel des Eintrags
+date: 2026-05-10
+preview: Kurzer Vorschautext fuer Karten und Timeline.
+type: news
+display: page
+color: sage
 ---
-title: "Titel deiner News"
-date: 2026-01-15
-description: "Kurze Beschreibung für die Vorschau"
----
-```
-
-**Felder:**
-| Feld | Erforderlich | Beschreibung |
-|------|--------------|---------------|
-| title | Ja | Titel der News |
-| date | Ja | Datum im Format JJJJ-MM-TT |
-| description | Nein | Kurze Beschreibung für die Übersicht |
-
-### Schritt 3: Inhalt schreiben
-
-Nach dem zweiten `---` kommt der eigentliche Inhalt:
-
-```
-markdown
----
-title: "Neue Trainingszeiten"
-date: 2026-01-15
-description: "Ab Februar zusätzliche Einheit am Freitag."
----
-
-Hier kommt der Text deiner News.
-
-## Unterüberschrift
-
-Du kannst auch **fetten**, *kursiven* oder [Links](https://example.com) verwenden.
-
-- Punkt 1
-- Punkt 2
-- Punkt 3
 ```
 
-### Unterstützte Formatierungen
+### Verfuegbare Felder
 
-- **Fett:** `**Text**` → **Text**
-- *Kursiv:* `*Text*` → *Text*
-- [Links](url) → `[Text](URL)`
-- Listen mit `-` oder `*`
-- Überschriften mit `##`, `###`, etc.
+- `title`: Ueberschrift des Eintrags
+- `date`: Startdatum im Format `JJJJ-MM-TT`
+- `endDate`: optionales Enddatum fuer mehrtaegige Termine
+- `preview`: kurzer Teasertext
+- `type`: `news` oder `event`
+- `display`: `page` oder `modal`
+- `location`: optionaler Ort
+- `color`: `moss`, `sage` oder `gold`
+- `pdfs.de`: optionaler Link zu einer deutschen PDF
+- `pdfs.en`: optionaler Link zu einer englischen PDF
 
+### Typische Beispiele
+
+Kurze Neuigkeit:
+
+```md
+---
+title: Trainingsbetrieb findet statt
+date: 2026-04-23
+preview: Alle regulaeren Einheiten finden derzeit wie geplant statt.
+type: news
+display: page
+color: sage
 ---
 
-## Bestehende Seiten bearbeiten
-
-Die Seiteninhalte befinden sich in `src/content/pages/`:
-
-| Datei | Seite |
-|-------|-------|
-| `index.md` | Startseite |
-| `news.md` | News-Übersicht |
-| `termine.md` | Termine |
-| `training.md` | Training |
-| `kontakt.md` | Kontakt |
-| `impressum.md` | Impressum |
-
-### Seiten-Struktur
-
+Kurzer Infotext fuer die Detailseite.
 ```
-markdown
+
+Termin mit PDF:
+
+```md
 ---
-title: "Seitentitel"
-order: 1
+title: Lehrgang mit Daniel und Sonia Toutain
+date: 2026-09-12
+endDate: 2026-09-13
+preview: Zweitaegiger Lehrgang in Hochburg-Ach.
+type: event
+location: Mehrzweckhalle der neuen Mittelschule, Duttendorf
+display: modal
+color: moss
+pdfs:
+  de: /downloads/lehrgang-hochburg-ach-de.pdf
+  en: /downloads/lehrgang-hochburg-ach-en.pdf
 ---
 
-# Hauptüberschrift
-
-Inhalt der Seite...
+Weitere Details zum Lehrgang.
 ```
 
----
+## Wichtige Inhalte bearbeiten
 
-## Deployment
+Statische Seiteninhalte liegen in `src/content/pages/`.
 
-### Automatisches Deployment
+- `index.md`: Startseite
+- `ueber-uns.md`: Verein, Trainingsort, Probetraining, Trainer
+- `training.md`: Trainingsinhalt
+- `trainingsplan.md`: Wochenuebersicht
+- `impressum.md`: Impressum und Ansprechpartner
 
-Sobald du Änderungen auf GitHub pushst, wird die Website automatisch gebaut und deployed:
+Navigation, Footer und Kontaktseite liegen direkt in Astro-Dateien:
 
-```
-bash
-# Änderungen hinzufügen
-git add .
+- `src/components/Navigation.astro`
+- `src/components/Footer.astro`
+- `src/pages/kontakt.astro`
 
-# Commit erstellen
-git commit -m "Neue News veröffentlicht"
+Zentrale Daten liegen in:
 
-# Auf GitHub pushen
-git push origin main
-```
+- `src/data/site.ts`
+- `src/lib/news.ts`
 
-### Manuelles Deployment (optional)
+## Lokale Befehle
 
-```
-bash
-# Dependencies installieren
-npm install
-
-# Lokal entwickeln
+```bash
 npm run dev
+```
 
-# Für Production bauen
+Startet die Astro-Entwicklung.
+
+```bash
+npm run generate:brochures
+```
+
+Erzeugt die PDF-Dateien in `public/downloads/`.
+
+```bash
 npm run build
 ```
 
-### GitHub Pages URL
+Raeumt den Build-Ordner auf, erzeugt die PDF-Dateien neu und baut die Website nach `dist/`.
 
-Deine Website ist unter folgendem Link erreichbar:
-**https://felix-mackinger.github.io/aikido/**
+```bash
+npm run preview
+```
 
----
+Lokale Vorschau des Astro-Builds.
 
-## Tipps
+```bash
+npm run worker:dev
+```
 
-1. **Datum formatieren:** Verwende das Format `JJJJ-MM-T` (z.B. `2026-01-15`)
-2. **Bilder hinzufügen:** Lege Bilder in `public/images/` und verweise mit `/aikido/images/bildname.jpg`
-3. **Vorschau:** Nutze `npm run dev` um die Seite lokal zu testen bevor du publishst
+Startet die Cloudflare-Workers-Vorschau ueber Wrangler.
 
----
+```bash
+npm run worker:deploy
+```
 
-## Hilfe bei Problemen
+Deployt die Website auf Cloudflare Workers.
 
-Falls etwas nicht funktioniert:
-1. Prüfe die Konsole auf Fehlermeldungen
-2. Starte den Entwicklungsserver neu: `npm run dev`
-3. Prüfe die Markdown-Syntax
+## Deployment auf Cloudflare Workers
+
+Die Website wird jetzt fuer `dist/` gebaut und ueber `wrangler.jsonc` plus `worker/index.js` ausgeliefert.
+
+Wichtige Dateien:
+
+- `astro.config.mjs`
+- `wrangler.jsonc`
+- `worker/index.js`
+
+Der Worker liefert statische Dateien aus `dist/` aus und loest saubere URLs wie `/news` automatisch auf die passende HTML-Datei auf.

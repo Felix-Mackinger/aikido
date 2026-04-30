@@ -4,10 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "clean": "node ./scripts/clean-build.mjs",
+    "generate:brochures": "node ./scripts/generate-brochures.mjs",
+    "build": "npm run clean && npm run generate:brochures && astro build",
+    "preview": "astro preview",
+    "worker:dev": "npm run build && wrangler dev",
+    "worker:deploy": "npm run build && wrangler deploy"
   },
   "devDependencies": {
-    "astro": "^5.16.8"
+    "astro": "^5.16.8",
+    "wrangler": "^4.14.1"
   }
 }

@@ -2,6 +2,7 @@
 import Navigation from '../components/Navigation.astro';
 import Footer from '../components/Footer.astro';
 import ScrollTop from '../components/ScrollTop.astro';
+import { siteMeta } from '../data/site';
 
 interface Props {
   title: string;
@@ -11,11 +12,11 @@ interface Props {
 
 const {
   title,
-  description = 'Aikido Dojo - Der Weg der Harmonie. Traditionelle japanische Kampfkunst fuer alle Altersgruppen.',
+  description = siteMeta.description,
   content,
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = Astro.site ? new URL(Astro.url.pathname, Astro.site) : null;
 const baseUrl = import.meta.env.BASE_URL || '/';
 ---
 
@@ -25,11 +26,11 @@ const baseUrl = import.meta.env.BASE_URL || '/';
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content={description} />
   <meta name="color-scheme" content="light dark" />
-  <meta name="keywords" content="Aikido, Dojo, Kampfkunst, Japan, Meditation, Selbstverteidigung, Braunau, Training" />
-  <meta name="author" content="Aikido Dojo" />
+  <meta name="keywords" content="Aikido, Dojo, Kampfkunst, Braunau, Training, Hochburg-Ach" />
+  <meta name="author" content={siteMeta.name} />
 
   <meta property="og:type" content="website" />
-  <meta property="og:url" content={canonicalURL} />
+  {canonicalURL && <meta property="og:url" content={canonicalURL} />}
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:locale" content="de_DE" />
@@ -37,10 +38,11 @@ const baseUrl = import.meta.env.BASE_URL || '/';
   <link rel="icon" type="image/svg+xml" href={`${baseUrl}favicon.svg`} />
 
   <title>{title}</title>
-  <link rel="canonical" href={canonicalURL} />
+  {canonicalURL && <link rel="canonical" href={canonicalURL} />}
 
   <script is:inline define:vars={{ baseUrl }}>
     window.__SITE_BASE__ = baseUrl;
+
     try {
       const storedTheme = localStorage.getItem('theme');
       const preferredTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -58,7 +60,7 @@ const baseUrl = import.meta.env.BASE_URL || '/';
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+JP:wght@500;600;700&family=Yuji+Syuku&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <script is:inline src={`${baseUrl}scripts/i18n.js`}></script>
 </head>
@@ -66,10 +68,6 @@ const baseUrl = import.meta.env.BASE_URL || '/';
 <body>
   <div class="site-wrapper">
     <Navigation />
-    
-    <div class="logo-watermark">
-      <img src={`${baseUrl}favicon.svg`} alt="Aikido Logo" />
-    </div>
 
     <main class="content">
       {content ? <div set:html={content} /> : <slot />}
