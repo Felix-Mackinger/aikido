@@ -47,6 +47,7 @@
   --color-nav-bg: rgba(248, 250, 245, 0.86);
   --color-nav-text: #24362a;
   --color-nav-hover: #1d3425;
+  --color-utility-bg: rgba(242, 245, 237, 0.92);
   --color-footer-bg: rgba(228, 235, 225, 0.78);
   --color-footer-border: rgba(53, 88, 66, 0.14);
 
@@ -100,6 +101,7 @@
   --color-nav-bg: rgba(17, 24, 19, 0.88);
   --color-nav-text: #eaf3eb;
   --color-nav-hover: #e3f0e6;
+  --color-utility-bg: rgba(17, 24, 19, 0.88);
   --color-footer-bg: rgba(14, 20, 16, 0.88);
   --color-footer-border: rgba(185, 213, 191, 0.12);
 

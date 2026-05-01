@@ -72,6 +72,14 @@ export const contactData = {
     compact: '+43 650 4600020',
     split: ['+43 650', '4600020'],
   },
+  socialinstagram: {
+    href: 'https://www.instagram.com/aikido.hochburg.ach/',
+      label: 'Instagram',
+  },
+  socialfacebook: {
+    href: 'https://www.facebook.com/aikido.hochburg.ach/',
+      label: 'Facebook',
+  },
 };
 
 export const boardMembers = [
@@ -175,6 +183,14 @@ export const footerSocialLinks = [
   {
     label: 'Telefon',
     href: contactData.phone.href,
+  },
+  {
+    label: 'Instagram',
+    href: contactData.socialinstagram.href,
+  },
+  {
+    label: 'Facebook',
+    href: contactData.socialfacebook.href,
   },
   {
     label: 'Google Maps',

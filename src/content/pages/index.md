@@ -24,17 +24,22 @@ order: 1
 
 <section class="content-block-spacious">
   <h2>Woher kommt Aikido?</h2>
-  <p class="lead-text">Aikido ist eine japanische Kampfkunst, die von O'Sensei Ueshiba Morihei (1883-1969) entwickelt und ueber Jahrzehnte weiter verfeinert wurde.</p>
-  <p>O'Sensei hat in seinem Leben unterschiedliche Kampfschulen gemeistert. Unter anderem Sumo, Jujutsu, Kenjutsu, Judo, Bajonett- und Speerkampf. Die Koerpertechniken des Aikido basieren hauptsaechlich auf den Formen des Yagyu-ryu und Daito-ryu Jujutsu.</p>
-  <p>Im Laufe der Zeit veraenderte sich die Form von geradlinigen Bewegungen hin zu kreisfoermiger Aufnahme und Umlenkung. Aus diesem Denken entwickelte sich schliesslich Aikido - der Weg der Harmonie.</p>
-  <p>Gerade diese Idee macht Aikido fuer viele Menschen so spannend: Kraft wird nicht frontal geblockt, sondern ueber Timing, Haltung und Bewegung aufgenommen und weitergefuehrt.</p>
+  <p class="lead-text">Aikido ist eine japanische Kampfkunst, die von O’Sensei Ueshiba Morihei (*1883,+1969) um 1920 entwickelt wurde und die er bis zu seinem Tod 1969 stetig weiterentwickelt hat. </p>
+  <p>O’Sensei hat in seinem Leben unterschiedliche Kampfschulen gemeistert. Unter anderem Sumo, Jūjutsu (Yagyu-ryū und Daitō-ryū), Kenjutsu, Judo, Bajonett und Speerkampf. Die Körper Techniken des Aikido basieren hauptsächlich auf den Formen des Yagyu-ryū und Daitō-ryū Jūjutsu, in denen O’Sensei ein Diplom erhielt. Im Laufe der Zeit änderte O’Sensei die Form von der geradlinigen hin zur kreisförmigen Aufnahme der Angriffe und ergänzte die Techniken um Aspekte des Kotodama. Wodurch die Wurzeln des Aikido geboren wurden, die um 1922 unter dem Namen Aiki-Bujutsu bekannt wurden. </p>
+  <p>Ein klassisches Prinzip aus dem Jūjutsu, dass das Weiche das Harte besiegt, wurde durch O’Sensei in einer abgewandelten Form ins Aikido übernommen. Dabei wurde aus „Wenn du geschoben wirst, ziehe zurück; wenn du gezogen wirst, schiebe vorwärts“ dann das um die Kreisbewegung ergänzte „Wenn du geschoben wirst, drehe dich und weiche aus; wenn du gezogen wirst, trete kreisförmig ein“. </p>
+  <p>Die Idee der kreisförmigen Bewegungen ermöglicht es, körperlich überlegene Gegner zu kontrollieren. Wie bei einer Kugel ist das Zentrum stabil und die Bewegung entsteht aus dem Ruhepunkt. Diese kreisförmige Bewegung kann jede Gegenkraft durch Techniken aus ihrem Zentrum heraus umlenken und damit neutralisieren. </p>
+  <p>Nach Jahren intensiven Trainings und einigen persönlichen Erfahrungen, änderte O’Sensei den Namen Aiki-Bujutsu (der sich hauptsächlich auf das technische Können bezieht), im Jahr 1925 auf Aiki-Budō (Dō bedeutet, dass es sich vor allem auch um philosophische Prinzipien handelt). Um 1942 beschloss O’Sensei sein System Aikido (Weg der Harmonie und Liebe) zu nennen. </p>
+  <p>In zunehmendem Alter verschob sich der Fokus von O’Sensei weg von der Wildheit und Kraft hin zur liebenden Natur des Aikido (Das Schriftzeichen Ai, das Harmonie bedeutet, klingt gleich, wie das Schriftzeichen für Liebe. Mit zunehmendem Alter hat O’Sensei die Gleichheit dieser beiden Bedeutungen betont).</p>
 </section>
 
 <section class="content-block-spacious">
   <h2>Was ist Aikido?</h2>
-  <p class="lead-text">Aikido verbindet Koerperarbeit, Aufmerksamkeit und respektvolles Miteinander.</p>
-  <p>Die Techniken arbeiten mit Hebeln, Gleichgewicht und kreisfoermigen Bewegungen. Ziel ist nicht, einen Gegner zu besiegen, sondern Konflikte ohne unnoetige Haerte zu kontrollieren.</p>
-  <p>Zum Training gehoeren Fallschule, Partneruebungen und Buki Waza. Im Umgang mit Holzschwert, Stock und Tanto wird das Verstaendnis fuer Distanz, Haltung und Praezision vertieft.</p>
+  <p class="lead-text">Dies ist eine sehr schwierige Frage, die auch erfahrene Aikidoka nicht so ohne weiteres beantworten können. 
+  <p>Aikido ist eine japanische Kampfkunst, deren Körpertechniken auf den Schulen des Yagyu-ryū und Daitō-ryū Jūjutsu basieren, wobei der Tötungsgedanke herausgenommen wurde. 
+  <p>Die Angriffe werden durch Kreisbewegungen umgelenkt anstelle sich ihnen direkt entgegenzustellen und auf Konfrontation zu gehen. Zudem beinhaltet das Körper-Technik-Programm (taijutsu) auch viele Verhebelungen. Dies ermöglicht es, körperlich überlegene Gegner zu kontrollieren. 
+  <p>Ziel ist es, dass weder dem Angreifer (uke, der Gebende), noch dem Angegriffenen (nage, der Empfangende) Schaden entsteht. 
+  <p>Abgerundet wird das Training, das der Lehre von Saito Morihiro Sensei folgt, durch das Waffentraining (buki waza). Indem man den Umgang mit dem Holzschwert (ken) im Aikiken, dem Holzstab (jo) im Aikijo und dem Holzmesser (tanto) erlernt, lernt man seinen Körper besser kennen. 
+</p>
 </section>
 
 <section class="suitability-section">
